@@ -8,7 +8,7 @@
 
 <meta name="author" content="Hiep Tat Bui">
 
-<title>Project MÔ HÌNH HÓA THỐNG KÊ</title>
+<title>PROJECT - MÔ HÌNH HÓA THỐNG KÊ</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,18 +58,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="stats-modeling_files/libs/clipboard/clipboard.min.js"></script>
-<script src="stats-modeling_files/libs/quarto-html/quarto.js"></script>
-<script src="stats-modeling_files/libs/quarto-html/popper.min.js"></script>
-<script src="stats-modeling_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="stats-modeling_files/libs/quarto-html/anchor.min.js"></script>
-<link href="stats-modeling_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="stats-modeling_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="stats-modeling_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="stats-modeling_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="stats-modeling_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="stats-modeling_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="stats-modeling_files/libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="statistical-modeling-with-R_files/libs/clipboard/clipboard.min.js"></script>
+<script src="statistical-modeling-with-R_files/libs/quarto-html/quarto.js"></script>
+<script src="statistical-modeling-with-R_files/libs/quarto-html/popper.min.js"></script>
+<script src="statistical-modeling-with-R_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="statistical-modeling-with-R_files/libs/quarto-html/anchor.min.js"></script>
+<link href="statistical-modeling-with-R_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="statistical-modeling-with-R_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="statistical-modeling-with-R_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="statistical-modeling-with-R_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="statistical-modeling-with-R_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="statistical-modeling-with-R_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="statistical-modeling-with-R_files/libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -102,7 +102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#các-dataset-được-sử-dụng" id="toc-các-dataset-được-sử-dụng" class="nav-link active" data-scroll-target="#các-dataset-được-sử-dụng">CÁC DATASET ĐƯỢC SỬ DỤNG:</a></li>
   <li><a href="#hoạt-động-1" id="toc-hoạt-động-1" class="nav-link" data-scroll-target="#hoạt-động-1">Hoạt động 1</a>
   <ul>
-  <li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a>
+  <li><a href="#bài-tập-1" id="toc-bài-tập-1" class="nav-link" data-scroll-target="#bài-tập-1">Bài tập 1</a>
   <ul class="collapse">
   <li><a href="#tiền-xử-lí-dữ-liệu" id="toc-tiền-xử-lí-dữ-liệu" class="nav-link" data-scroll-target="#tiền-xử-lí-dữ-liệu">Tiền xử lí dữ liệu</a></li>
   <li><a href="#chia-dataset-thành-tập-train-và-tập-validation" id="toc-chia-dataset-thành-tập-train-và-tập-validation" class="nav-link" data-scroll-target="#chia-dataset-thành-tập-train-và-tập-validation">Chia dataset thành tập train và tập validation</a></li>
@@ -111,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#so-sánh-kết-quả" id="toc-so-sánh-kết-quả" class="nav-link" data-scroll-target="#so-sánh-kết-quả">So sánh kết quả</a></li>
   <li><a href="#đề-xuất-cải-tiếnphân-tích-khác" id="toc-đề-xuất-cải-tiếnphân-tích-khác" class="nav-link" data-scroll-target="#đề-xuất-cải-tiếnphân-tích-khác">Đề xuất cải tiến/phân tích khác</a></li>
   </ul></li>
-  <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a>
+  <li><a href="#bài-tập-2" id="toc-bài-tập-2" class="nav-link" data-scroll-target="#bài-tập-2">Bài tập 2</a>
   <ul class="collapse">
   <li><a href="#tiền-xử-lí-dữ-liệu-1" id="toc-tiền-xử-lí-dữ-liệu-1" class="nav-link" data-scroll-target="#tiền-xử-lí-dữ-liệu-1">Tiền xử lí dữ liệu</a></li>
   <li><a href="#phân-tích-phương-sai-anova-nhiều-nhân-tố-đã-chọn" id="toc-phân-tích-phương-sai-anova-nhiều-nhân-tố-đã-chọn" class="nav-link" data-scroll-target="#phân-tích-phương-sai-anova-nhiều-nhân-tố-đã-chọn">Phân tích phương sai ANOVA nhiều nhân tố đã chọn</a>
@@ -149,7 +149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project MÔ HÌNH HÓA THỐNG KÊ</h1>
+<h1 class="title">PROJECT - MÔ HÌNH HÓA THỐNG KÊ</h1>
 </div>
 
 
@@ -234,8 +234,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="hoạt-động-1" class="level1 page-columns page-full">
 <h1>Hoạt động 1</h1>
-<section id="task-1" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
+<section id="bài-tập-1" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="bài-tập-1">Bài tập 1</h2>
 <section id="tiền-xử-lí-dữ-liệu" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="tiền-xử-lí-dữ-liệu">Tiền xử lí dữ liệu</h3>
 <p>Loại bỏ dữ liệu bị trùng lặp và thực hiện kiểm tra data profiling với thư viện skimr với lệnh <code>skim(data1)</code></p>
@@ -555,7 +555,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 [10] "Likes"               "Dislikes"            "Comments"           
 [13] "Aggregate_Followers"</code></pre>
 </div>
-</div></div><p>Để xử lí, ta giả định dữ liệu bị khuyết là dạng MAR và sử dụng thuật toán MICE (Multiple Imputation by Chained Equations) để thay thế giá trị bị khuyết. Việc sử dụng method=‘cart’ vì trong tập dữ liệu có biến độc lập là biến định tính. Sau cùng ta kiểm tra lại tập dữ liệu có còn dữ liệu khuyết nào hay không nhờ lệnh colSums(is.na(data1))</p>
+</div></div><p>Để xử lí, ta giả định dữ liệu bị khuyết là dạng MAR và sử dụng thuật toán MICE (Multiple Imputation by Chained Equations) để thay thế giá trị bị khuyết. Việc sử dụng method=‘cart’ vì trong tập dữ liệu có biến độc lập là biến định tính. Sau cùng kiểm tra lại tập dữ liệu có còn dữ liệu khuyết nào hay không nhờ lệnh colSums(is.na(data1))</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -662,10 +662,10 @@ Aggregate_Followers
 <p>Kiểm tra nhanh với biểu đồ boxplot ở từng biến dữ liệu (không thực hiện với biến Year (chỉ có giá trị 2014-2015) và Genre (biến định tính)), ta thấy ở cả tập train và val có khá nhiều outlier, kể cả biến phụ thuộc ta quan tâm.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="stats-modeling_files/figure-html/pressure-1.png" class="img-fluid" width="672"></p>
+<p><img src="statistical-modeling-with-R_files/figure-html/pressure-1.png" class="img-fluid" width="672"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="stats-modeling_files/figure-html/pressure-2.png" class="img-fluid" width="672"></p>
+<p><img src="statistical-modeling-with-R_files/figure-html/pressure-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>Tuy nhiên sử dụng biểu đồ có thể khiến ta mất thông tin. Kiểm tra cụ thể đếm số lượng outlier ở từng cột với lệnh <code>length(boxplot.stats(train$COLUMN_NAME)$out)</code>, ta nhận được kết quả là ngoại trừ biến <code>Screens</code>, còn lại tất cả đều có xuất hiện outlier.</p>
@@ -899,21 +899,49 @@ Multiple R-squared:  0.5902,    Adjusted R-squared:  0.5811
 F-statistic:  64.8 on 4 and 180 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
-<p>Kết quả cho thấy mô hình 3 lại tiếp tục tốt hơn mô hình 2 với F-statistic: 64.8. Kiểm tra hệ số tương quan pearson giữa các biến, không xuất hiện trường hợp độc lập tuyến tính.</p>
+<p>Kết quả cho thấy mô hình 3 lại tiếp tục tốt hơn mô hình 2 với F-statistic: 64.8. Kiểm tra hệ số tương quan pearson giữa các biến, các biến độc lập đều có ý nghĩa và có tương quan với biến phụ thuộc. Tuy nhiên lưu ý có biến Budget và Screen có hệ số tương quan lớn. Thử kiểm tra với mô hình này xem kết quả F-statistic</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="stats-modeling_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+<p><img src="statistical-modeling-with-R_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Kiểm tra liệu mô hình có xảy ra đa cộng tuyến hay không. Kết quả cho thấy Không có đa cộng tuyến xảy ra.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(mod3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>mod3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(Gross <span class="sc">~</span> Budget <span class="sc">+</span> Screens, <span class="at">data =</span> train)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>            Ratings              Budget             Screens Aggregate_Followers 
-           1.133086            1.764629            1.627973            1.043779 </code></pre>
+<pre><code>
+Call:
+lm(formula = Gross ~ Budget + Screens, data = train)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-159537837  -28791195   -3559172   12148488  443921008 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) -1.031e+07  8.246e+06  -1.250 0.212967    
+Budget       9.541e-01  1.054e-01   9.049  &lt; 2e-16 ***
+Screens      1.551e+04  3.956e+03   3.920 0.000125 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 63870000 on 182 degrees of freedom
+Multiple R-squared:  0.5472,    Adjusted R-squared:  0.5422 
+F-statistic:   110 on 2 and 182 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>F-statistic: 110. Mô hình rất khả quan cho việc dự đoán <code>Gross</code>. Kiểm tra liệu mô hình có xảy ra đa cộng tuyến hay không. Kết quả cho thấy Không có đa cộng tuyến xảy ra.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(mod3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Budget  Screens 
+1.570738 1.570738 </code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
@@ -936,14 +964,14 @@ Lưu ý
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(<span class="fu">resid</span>(mod3))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(<span class="fu">resid</span>(mod3))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Shapiro-Wilk normality test
 
 data:  resid(mod3)
-W = 0.81476, p-value = 4.62e-14</code></pre>
+W = 0.80995, p-value = 2.956e-14</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -965,20 +993,20 @@ W = 0.81476, p-value = 4.62e-14</code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(mod3), <span class="at">mu =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(mod3), <span class="at">mu =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     One Sample t-test
 
 data:  resid(mod3)
-t = -1.0245e-17, df = 184, p-value = 1
+t = 1.4892e-15, df = 184, p-value = 1
 alternative hypothesis: true mean is not equal to 0
 95 percent confidence interval:
- -8765302  8765302
+ -9213740  9213740
 sample estimates:
-    mean of x 
--4.551406e-11 </code></pre>
+   mean of x 
+6.954537e-09 </code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -1000,12 +1028,12 @@ sample estimates:
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncvTest</span>(mod3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncvTest</span>(mod3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Non-constant Variance Score Test 
 Variance formula: ~ fitted.values 
-Chisquare = 113.0811, Df = 1, p = &lt; 2.22e-16</code></pre>
+Chisquare = 127.2971, Df = 1, p = &lt; 2.22e-16</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -1024,30 +1052,28 @@ Chisquare = 113.0811, Df = 1, p = &lt; 2.22e-16</code></pre>
 <p>Ta bác bỏ H0 với p_value &lt; 2.22e-16 &lt; 0.05. <strong>Mô hình không thỏa mãn tính ổn định của phương sai</strong>, phương sai của sai số thay đổi.</p>
 </div>
 </div>
-<p><strong>Như vậy</strong>, mô hình không thỏa mãn tính ổn định của phương sai cũng như không có phân phối chuẩn. Việc không thỏa các giả định khiến cho mô hình không đáng tin cậy cho việc ước lượng. Vì vậy cần thực hiện các phép biến đổi biến (trasformation) với phương pháp Box-Cox.</p>
+<p><strong>Như vậy</strong>, mô hình không thỏa mãn tính ổn định của phương sai cũng như không có phân phối chuẩn. Việc không thỏa các giả định khiến cho mô hình không đáng tin cậy cho việc ước lượng. Vì vậy cần thực hiện các phép biến đổi biến (trasformation) với phương pháp Box-Cox. Vì cả biến <code>Gross</code> khi nãy ta kiểm tra có outlier (có 14 giá trị outliers), ta quyết định kiểm tra và cân nhắc biến đổi biến phụ thuộc và biến độc lập</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">powerTransform</span>(<span class="fu">cbind</span>(Gross, Ratings, Budget, Screens, Aggregate_Followers) <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> train)</span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">powerTransform</span>(<span class="fu">cbind</span>(Gross, Budget, Screens) <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> train)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>bcPower Transformations to Multinormality 
-                    Est Power Rounded Pwr Wald Lwr Bnd Wald Upr Bnd
-Gross                  0.2652        0.27       0.2175       0.3130
-Ratings                1.8945        2.00       1.1780       2.6111
-Budget                 0.2109        0.21       0.1339       0.2879
-Screens                0.6107        0.50       0.4938       0.7276
-Aggregate_Followers    0.1402        0.14       0.0803       0.2001
+        Est Power Rounded Pwr Wald Lwr Bnd Wald Upr Bnd
+Gross      0.2544        0.25       0.2065       0.3023
+Budget     0.2047        0.20       0.1281       0.2813
+Screens    0.6245        0.62       0.5062       0.7428
 
 Likelihood ratio test that transformation parameters are equal to 0
  (all log transformations)
-                                   LRT df       pval
-LR test, lambda = (0 0 0 0 0) 331.9279  5 &lt; 2.22e-16
+                               LRT df       pval
+LR test, lambda = (0 0 0) 277.5498  3 &lt; 2.22e-16
 
 Likelihood ratio test that no transformations are needed
-                                   LRT df       pval
-LR test, lambda = (1 1 1 1 1) 1201.682  5 &lt; 2.22e-16</code></pre>
+                               LRT df       pval
+LR test, lambda = (1 1 1) 684.7745  3 &lt; 2.22e-16</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -1084,40 +1110,35 @@ Với p_value &lt; 2.22e-16. Bác bỏ H0, ta <strong>cần thực hiện tối 
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rút ra các cột trong tập train và biến đổi biến</span></span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>subset <span class="ot">&lt;-</span> train <span class="sc">%&gt;%</span> <span class="fu">select</span>(Gross, Ratings, Budget, Screens, Aggregate_Followers)</span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Gross <span class="ot">&lt;-</span> subset<span class="sc">$</span>Gross<span class="sc">^</span>(<span class="fl">0.27</span>)</span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Ratings <span class="ot">&lt;-</span> subset<span class="sc">$</span>Ratings<span class="sc">^</span>(<span class="dv">2</span>)</span>
-<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Budget <span class="ot">&lt;-</span> subset<span class="sc">$</span>Budget<span class="sc">^</span>(<span class="fl">0.21</span>)</span>
-<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Screens <span class="ot">&lt;-</span> subset<span class="sc">$</span>Screens<span class="sc">^</span>(<span class="fl">0.5</span>)</span>
-<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Aggregate_Followers <span class="ot">&lt;-</span> subset<span class="sc">$</span>Aggregate_Followers<span class="sc">^</span>(<span class="fl">0.14</span>)</span>
-<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a>mod3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(Gross <span class="sc">~</span> Ratings <span class="sc">+</span> Budget <span class="sc">+</span> Screens <span class="sc">+</span> Aggregate_Followers, <span class="at">data =</span> subset)</span>
-<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rút ra các cột trong tập train và biến đổi biến</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>subset <span class="ot">&lt;-</span> train <span class="sc">%&gt;%</span> <span class="fu">select</span>(Gross, Budget, Screens)</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Gross <span class="ot">&lt;-</span> subset<span class="sc">$</span>Gross<span class="sc">^</span>(<span class="fl">0.25</span>)</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Budget <span class="ot">&lt;-</span> subset<span class="sc">$</span>Budget<span class="sc">^</span>(<span class="fl">0.2</span>)</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>subset<span class="sc">$</span>Screens <span class="ot">&lt;-</span> subset<span class="sc">$</span>Screens<span class="sc">^</span>(<span class="fl">0.62</span>)</span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>mod3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(Gross <span class="sc">~</span> Budget <span class="sc">+</span> Screens, <span class="at">data =</span> subset)</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
-lm(formula = Gross ~ Ratings + Budget + Screens + Aggregate_Followers, 
-    data = subset)
+lm(formula = Gross ~ Budget + Screens, data = subset)
 
 Residuals:
-     Min       1Q   Median       3Q      Max 
--116.948  -17.339   -1.117   14.680   75.103 
+   Min     1Q Median     3Q    Max 
+-81.15 -11.84  -0.96  12.79  46.23 
 
 Coefficients:
-                    Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)         -48.6901    10.7619  -4.524 1.10e-05 ***
-Ratings               0.7196     0.1744   4.127 5.60e-05 ***
-Budget                1.8055     0.2748   6.570 5.23e-10 ***
-Screens               1.0563     0.1224   8.629 3.19e-15 ***
-Aggregate_Followers   2.3670     1.1044   2.143   0.0334 *  
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) -5.63919    5.77782  -0.976     0.33    
+Budget       1.77492    0.22655   7.834 3.79e-13 ***
+Screens      0.24795    0.03026   8.193 4.38e-14 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 28.55 on 180 degrees of freedom
-Multiple R-squared:  0.6881,    Adjusted R-squared:  0.6812 
-F-statistic: 99.29 on 4 and 180 DF,  p-value: &lt; 2.2e-16</code></pre>
+Residual standard error: 19.89 on 182 degrees of freedom
+Multiple R-squared:  0.6523,    Adjusted R-squared:  0.6485 
+F-statistic: 170.7 on 2 and 182 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <p>Kiểm tra lại các giả định</p>
@@ -1127,7 +1148,7 @@ F-statistic: 99.29 on 4 and 180 DF,  p-value: &lt; 2.2e-16</code></pre>
     Shapiro-Wilk normality test
 
 data:  resid(mod3)
-W = 0.98244, p-value = 0.02009</code></pre>
+W = 0.9843, p-value = 0.03625</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -1142,7 +1163,7 @@ W = 0.98244, p-value = 0.02009</code></pre>
 <div class="callout-body-container callout-body">
 <p><strong>H0</strong>: <span class="math inline">{\varepsilon _i}</span> có phân phối chuẩn<br>
 <strong>H1</strong>: <span class="math inline">{\varepsilon _i}</span> không có phân phối chuẩn</p>
-<p>Ta bác bỏ H0, p-value &lt; 0.05 <strong>sai số của mô hình không có phân phối chuẩn</strong>. Tuy nhiên p_value ở mô hình này đã cải thiện từ 4.62e-14 ở mô hình cũ lên p_value = 0.02009</p>
+<p>Ta bác bỏ H0, p-value = 0.03625 &lt; 0.05 <strong>sai số của mô hình không có phân phối chuẩn</strong>. Tuy nhiên p_value ở mô hình này đã cải thiện từ 2.956e-14 ở mô hình cũ lên p_value = 0.03625. Có thể thấy mô hình đã cải thiện đáng kể về giả định về tính chuẩn của sai số.</p>
 </div>
 </div>
 <div class="cell">
@@ -1151,13 +1172,13 @@ W = 0.98244, p-value = 0.02009</code></pre>
     One Sample t-test
 
 data:  resid(mod3)
-t = 1.0978e-16, df = 184, p-value = 1
+t = -1.0525e-15, df = 184, p-value = 1
 alternative hypothesis: true mean is not equal to 0
 95 percent confidence interval:
- -4.096356  4.096356
+ -2.869418  2.869418
 sample estimates:
-   mean of x 
-2.279333e-16 </code></pre>
+    mean of x 
+-1.530804e-15 </code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -1179,7 +1200,7 @@ sample estimates:
 <div class="cell-output cell-output-stdout">
 <pre><code>Non-constant Variance Score Test 
 Variance formula: ~ fitted.values 
-Chisquare = 0.6057082, Df = 1, p = 0.43641</code></pre>
+Chisquare = 0.1531024, Df = 1, p = 0.69559</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -1194,10 +1215,10 @@ Chisquare = 0.6057082, Df = 1, p = 0.43641</code></pre>
 <div class="callout-body-container callout-body">
 <p><strong>H0</strong>: phương sai không thay đổi<br>
 <strong>H1</strong>: phương sai thay đổi</p>
-<p>Chấp nhận H0 với p = 0.43641 &gt; 0.05. Mô hình thỏa mãn tính ổn định của phương sai.</p>
+<p>Chấp nhận H0 với p = 0.695 &gt; 0.05. Mô hình thỏa mãn tính ổn định của phương sai.</p>
 </div>
 </div>
-<p><strong>Như vậy</strong>, sau khi thực hiện biến đổi biến ở các biến độc lập cũng như biến phụ thuộc, đã khắc phục được giả định về tính ổn định của phương sai sai số. Tuy nhiên giả định về tính chuẩn của sai số vẫn chưa khắc phục được mặc dù đã có sự cải thiện đáng kể về giá trị của p_value.</p>
+<p><strong>Như vậy</strong>, sau khi thực hiện biến đổi biến ở các biến độc lập cũng như biến phụ thuộc. Ta đã khắc phục được giả định về tính ổn định của phương sai sai số. Tuy nhiên giả định về tính chuẩn của sai số vẫn chưa khắc phục được mặc dù đã có sự cải thiện đáng kể về giá trị của p_value.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1208,29 +1229,29 @@ Kết luận
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Như vậy với R^2 hiệu chỉnh = 68.12%, mô hình có các biến độc lập giải thích được cho 68.12% sự biến thiên của biến phụ thuộc. Mô hình cũng không xảy ra hiện tượng đa cộng tuyến giữa các biến độc lập. Tuy nhiên, mô hình vẫn chưa thỏa mãn giả định về tính chuẩn của sai số.</p>
+<p>Như vậy với R^2 hiệu chỉnh = 64.85%, mô hình có các biến độc lập giải thích được cho 64.85% sự biến thiên của biến phụ thuộc. Mô hình cũng không xảy ra hiện tượng đa cộng tuyến giữa các biến độc lập. Tuy nhiên, mô hình vẫn chưa thỏa mãn giả định về tính chuẩn của sai số.</p>
 </div>
 </div>
 </section>
 <section id="dự-báo" class="level3">
 <h3 class="anchored" data-anchor-id="dự-báo">Dự báo</h3>
-<p>Để thực hiện được dự báo phù hợp mô hình với tập validation, ta sẽ biến đổi biến ở tập validation theo các giá trị lambda đã được đề xuất ở trên. Sau đó sử dụng mô hình đã được xây dựng để dự báo giá trị Gross ở tập validation. Tập validation với các biến độc lập sau khi được biến đổi biến có tên là <code>val_subset</code>:</p>
+<p>Để thực hiện được dự báo phù hợp mô hình với tập validation, biến đổi biến ở tập validation theo các giá trị lambda đã được đề xuất ở trên. Sau đó sử dụng mô hình đã được xây dựng để dự báo giá trị Gross ở tập validation. Tập validation với các biến độc lập sau khi được biến đổi biến có tên là <code>val_subset</code>:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>  Ratings   Budget   Screens Aggregate_Followers
-1   37.21 39.48504 56.196085            9.280779
-2   50.41 34.13629 28.600699            5.203046
-3   47.61 27.38234  5.567764            5.117720
-4   62.41 53.17061 61.326992            5.521834
-5   42.25 39.48504 59.623821            7.828143
-6   64.00 24.34628 27.766887            5.046224</code></pre>
+<pre><code>    Budget    Screens
+1 33.14454 147.786757
+2 28.85400  63.959793
+3 23.38943   8.407062
+4 44.00447 164.697902
+5 33.14454 159.045196
+6 20.91279  61.655768</code></pre>
 </div>
 </div>
 <p>Thực hiện dự báo mô hình</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> <span class="fu">predict</span>(mod3, <span class="at">newdata =</span> val_subset)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> <span class="fu">predict</span>(mod3, <span class="at">newdata =</span> val_subset)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -1240,39 +1261,39 @@ Kết luận
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> y_hat<span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="fl">0.27</span>)</span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>MSE <span class="ot">&lt;-</span> (<span class="dv">1</span><span class="sc">/</span><span class="fu">dim</span>(val)[<span class="dv">1</span>])<span class="sc">*</span><span class="fu">sum</span>((val<span class="sc">$</span>Gross <span class="sc">-</span> y_hat)<span class="sc">^</span><span class="dv">2</span>)</span>
-<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>MSE</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> y_hat<span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="fl">0.25</span>)</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>MSE <span class="ot">&lt;-</span> <span class="fu">mean</span>((val<span class="sc">$</span>Gross <span class="sc">-</span> y_hat)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>MSE</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.253642e+15</code></pre>
+<pre><code>[1] 1.335894e+15</code></pre>
 </div>
 </div>
-<p>So sánh kết quả dự báo với giá trị thực tế của Gross ta có được MSE = 1.2536424^{15}.</p>
+<p>So sánh kết quả dự báo với giá trị thực tế của Gross ta có được MSE = 1.3358936^{15}.</p>
 </section>
 <section id="đề-xuất-cải-tiếnphân-tích-khác" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="đề-xuất-cải-tiếnphân-tích-khác">Đề xuất cải tiến/phân tích khác</h3>
-<p>Mặc dù đã cố gắng sử dụng các phép biến đổi biến, tuy nhiên mô hình hồi quy tuyến tính được xây dựng vẫn chưa đáp ứng được giả định về tính chuẩn của sai số.<br>
-Vì vậy cần có một cách tiếp cận khác đó chính là sử dụng <strong>Thống kê phi tham số</strong>, vì lúc này ta không cần đưa ra các giả định về phân phối tổng thể của tập dữ liệu.<br>
-Điểm mạnh của thống kê phi tham số là chống nhiễu tốt (outlier- tập dữ liệu này có nhiều giá trị outlier), giảm thời gian xây dựng mô hình khi không cần kiểm tra các giả định phân phối của dữ liệu, thực hiện biến đổi biến… Thực hiện thử nghiệm mô hình cây quyết định (Decision Tree). Ngoài ra ta thực hiện thêm với mô hình XGBoots- một mô hình tree based (tối ưu tuning parameter với Grid-search). Các mô hình được sử dụng với package <code>tidyverse</code>, <code>caret</code>. Lưu ý: lệnh train sử dụng từ package <code>parsnip</code>.</p>
+<p>Mặc dù đã cố gắng sử dụng các phép biến đổi biến, tuy nhiên mô hình hồi quy tuyến tính ta xây dựng vẫn chưa đáp ứng được giả định về tính chuẩn của sai số.<br>
+Theo tìm hiểu, cần có một cách tiếp cận khác đó chính là sử dụng <strong>Thống kê phi tham số</strong>, vì lúc này ta không cần đưa ra các giả định về phân phối tổng thể của tập dữ liệu.<br>
+Điểm mạnh của thống kê phi tham số là chống nhiễu tốt (outlier- tập dữ liệu này có nhiều giá trị outlier), giảm thời gian xây dựng mô hình khi không cần kiểm tra các giả định phân phối của dữ liệu, thực hiện biến đổi biến… Thực hiện thử nghiệm mô hình cây quyết định (Decision Tree). Ngoài ra ta còn thực hiện thêm với mô hình XGBoots- một mô hình tree based (tối ưu tuning parameter với Grid-search). Các mô hình được sử dụng với package <code>tidyverse</code>, <code>caret</code>. Lưu ý: lệnh train sử dụng từ package <code>parsnip</code>.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>tree_model <span class="ot">&lt;-</span> <span class="fu">decision_tree</span>(<span class="at">min_n=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"rpart"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_mode</span>(.,<span class="st">"regression"</span>)</span>
-<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>tree_fit <span class="ot">&lt;-</span></span>
-<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>  tree_model <span class="sc">%&gt;%</span></span>
-<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(Gross <span class="sc">~</span> ., <span class="at">data=</span>train)</span>
-<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> </span>
-<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>  val <span class="sc">%&gt;%</span></span>
-<span id="cb65-11"><a href="#cb65-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Gross) <span class="sc">%&gt;%</span></span>
-<span id="cb65-12"><a href="#cb65-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">predict</span>(tree_fit,val))</span>
-<span id="cb65-13"><a href="#cb65-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-14"><a href="#cb65-14" aria-hidden="true" tabindex="-1"></a>MSE_tree <span class="ot">&lt;-</span> <span class="fu">mean</span>((result<span class="sc">$</span>Gross <span class="sc">-</span> result<span class="sc">$</span>.pred)<span class="sc">^</span><span class="dv">2</span>)</span>
-<span id="cb65-15"><a href="#cb65-15" aria-hidden="true" tabindex="-1"></a>MSE_tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>tree_model <span class="ot">&lt;-</span> <span class="fu">decision_tree</span>(<span class="at">min_n=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"rpart"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_mode</span>(.,<span class="st">"regression"</span>)</span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>tree_fit <span class="ot">&lt;-</span></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>  tree_model <span class="sc">%&gt;%</span></span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(Gross <span class="sc">~</span> ., <span class="at">data=</span>train)</span>
+<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-9"><a href="#cb67-9" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> </span>
+<span id="cb67-10"><a href="#cb67-10" aria-hidden="true" tabindex="-1"></a>  val <span class="sc">%&gt;%</span></span>
+<span id="cb67-11"><a href="#cb67-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Gross) <span class="sc">%&gt;%</span></span>
+<span id="cb67-12"><a href="#cb67-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">predict</span>(tree_fit,val))</span>
+<span id="cb67-13"><a href="#cb67-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-14"><a href="#cb67-14" aria-hidden="true" tabindex="-1"></a>MSE_tree <span class="ot">&lt;-</span> <span class="fu">mean</span>((result<span class="sc">$</span>Gross <span class="sc">-</span> result<span class="sc">$</span>.pred)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb67-15"><a href="#cb67-15" aria-hidden="true" tabindex="-1"></a>MSE_tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.561262e+15</code></pre>
@@ -1281,26 +1302,26 @@ Vì vậy cần có một cách tiếp cận khác đó chính là sử dụng <
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>train_control <span class="ot">=</span> <span class="fu">trainControl</span>(<span class="at">method =</span> <span class="st">"cv"</span>, <span class="at">number =</span> <span class="dv">5</span>, <span class="at">search =</span> <span class="st">"grid"</span>)</span>
-<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Tạo thông số để thực hiện Grid search</span></span>
-<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>gbmGrid <span class="ot">&lt;-</span>  <span class="fu">expand.grid</span>(<span class="at">max_depth =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>), </span>
-<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>                        <span class="at">nrounds =</span> (<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)<span class="sc">*</span><span class="dv">50</span>,    <span class="co"># số lượng cây</span></span>
-<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># cài đặt các value mặc định</span></span>
-<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a>                        <span class="at">eta =</span> <span class="fl">0.3</span>,</span>
-<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a>                        <span class="at">gamma =</span> <span class="dv">0</span>,</span>
-<span id="cb67-9"><a href="#cb67-9" aria-hidden="true" tabindex="-1"></a>                        <span class="at">subsample =</span> <span class="dv">1</span>,</span>
-<span id="cb67-10"><a href="#cb67-10" aria-hidden="true" tabindex="-1"></a>                        <span class="at">min_child_weight =</span> <span class="dv">1</span>,</span>
-<span id="cb67-11"><a href="#cb67-11" aria-hidden="true" tabindex="-1"></a>                        <span class="at">colsample_bytree =</span> <span class="fl">0.6</span>)</span>
-<span id="cb67-12"><a href="#cb67-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb67-13"><a href="#cb67-13" aria-hidden="true" tabindex="-1"></a><span class="co"># huấn luyện mô hình XGboost Regression tree model</span></span>
-<span id="cb67-14"><a href="#cb67-14" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> (<span class="fu">train</span>(Gross<span class="sc">~</span>., </span>
-<span id="cb67-15"><a href="#cb67-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> train, <span class="at">method =</span> <span class="st">"xgbTree"</span>, </span>
-<span id="cb67-16"><a href="#cb67-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">trControl =</span> train_control, </span>
-<span id="cb67-17"><a href="#cb67-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">tuneGrid =</span> gbmGrid, <span class="at">verbosity =</span> <span class="dv">0</span>))</span>
-<span id="cb67-18"><a href="#cb67-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb67-19"><a href="#cb67-19" aria-hidden="true" tabindex="-1"></a><span class="co"># xuất kết quả mô hình tốt nhất cho XGboots</span></span>
-<span id="cb67-20"><a href="#cb67-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>train_control <span class="ot">=</span> <span class="fu">trainControl</span>(<span class="at">method =</span> <span class="st">"cv"</span>, <span class="at">number =</span> <span class="dv">5</span>, <span class="at">search =</span> <span class="st">"grid"</span>)</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Tạo thông số để thực hiện Grid search</span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>gbmGrid <span class="ot">&lt;-</span>  <span class="fu">expand.grid</span>(<span class="at">max_depth =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>), </span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>                        <span class="at">nrounds =</span> (<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)<span class="sc">*</span><span class="dv">50</span>,    <span class="co"># số lượng cây</span></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># cài đặt các value mặc định</span></span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>                        <span class="at">eta =</span> <span class="fl">0.3</span>,</span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>                        <span class="at">gamma =</span> <span class="dv">0</span>,</span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>                        <span class="at">subsample =</span> <span class="dv">1</span>,</span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a>                        <span class="at">min_child_weight =</span> <span class="dv">1</span>,</span>
+<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a>                        <span class="at">colsample_bytree =</span> <span class="fl">0.6</span>)</span>
+<span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a><span class="co"># huấn luyện mô hình XGboost Regression tree model</span></span>
+<span id="cb69-14"><a href="#cb69-14" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> (<span class="fu">train</span>(Gross<span class="sc">~</span>., </span>
+<span id="cb69-15"><a href="#cb69-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> train, <span class="at">method =</span> <span class="st">"xgbTree"</span>, </span>
+<span id="cb69-16"><a href="#cb69-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">trControl =</span> train_control, </span>
+<span id="cb69-17"><a href="#cb69-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">tuneGrid =</span> gbmGrid, <span class="at">verbosity =</span> <span class="dv">0</span>))</span>
+<span id="cb69-18"><a href="#cb69-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-19"><a href="#cb69-19" aria-hidden="true" tabindex="-1"></a><span class="co"># xuất kết quả mô hình tốt nhất cho XGboots</span></span>
+<span id="cb69-20"><a href="#cb69-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>eXtreme Gradient Boosting 
@@ -1367,7 +1388,7 @@ Ghi chú
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Dựa trên kết quả MSE, ta thấy được ở tập dữ liệu này Mô hình hồi quy tuyến tính cho kết quả tốt nhất với MSE = 1.2536424^{15} dù rằng không thỏa các giả định. Trong khi đó mô hình cây quyết định cho kết quả MSE = 2.561262^{15} và mô hình XGBoots cho kết quả MSE = 1.6306327^{15}. Tuy nhiên, ta cho rằng nếu thu thập nhiều dữ liệu hơn, thì các mô hình Decision Tree và XGBoots có thể sẽ cho kết quả tốt hơn.</p>
+<p>Dựa trên kết quả MSE, thấy được ở tập dữ liệu này Mô hình hồi quy tuyến tính cho kết quả tốt nhất với MSE = 1.3358936^{15} dù rằng không thỏa giả định về tính chuẩn của sai số. Trong khi đó mô hình cây quyết định cho kết quả MSE = 2.561262^{15} và mô hình XGBoots cho kết quả MSE = 1.6306327^{15}, kết quả 2 mô hình sau tệ hơn MSE của mô hình hồi quy tuyến tính. Tuy nhiên nếu thu thập nhiều dữ liệu hơn, thì các mô hình Decision Tree và XGBoots có thể sẽ cho kết quả tốt hơn.</p>
 </div>
 </div>
 
@@ -1376,7 +1397,7 @@ Ghi chú
 <pre><code>[1] "Linear Regression: MSE"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.253642e+15</code></pre>
+<pre><code>[1] 1.335894e+15</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Decision Tree: MSE"</code></pre>
@@ -1392,15 +1413,15 @@ Ghi chú
 </div>
 </div></div></section>
 </section>
-<section id="task-2" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
+<section id="bài-tập-2" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="bài-tập-2">Bài tập 2</h2>
 <section id="tiền-xử-lí-dữ-liệu-1" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="tiền-xử-lí-dữ-liệu-1">Tiền xử lí dữ liệu</h3>
 
 <div class="no-row-height column-margin column-container"><div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>data2[<span class="fu">duplicated</span>(data2),]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>data2[<span class="fu">duplicated</span>(data2),]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 7
@@ -1410,17 +1431,17 @@ Ghi chú
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Dữ liệu bị trùng 1 quan sát'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Dữ liệu bị trùng 1 quan sát'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Dữ liệu bị trùng 1 quan sát"</code></pre>
 </div>
-</div></div><p>Có 1 quan sát bị trùng, quyết định loại bỏ quan sát này. Kiểm tra data profiling với <code>skimr</code></p>
+</div></div><p>Có 1 quan sát bị trùng, ta quyết định loại bỏ quan sát này. Kiểm tra data profiling với <code>skimr</code></p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>data2 <span class="ot">&lt;-</span> data2 <span class="sc">%&gt;%</span> <span class="fu">distinct</span>()</span>
-<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>skimr<span class="sc">::</span><span class="fu">skim</span>(data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>data2 <span class="ot">&lt;-</span> data2 <span class="sc">%&gt;%</span> <span class="fu">distinct</span>()</span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>skimr<span class="sc">::</span><span class="fu">skim</span>(data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -1616,7 +1637,7 @@ Ghi chú
 <div class="no-row-height column-margin column-container"><div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>age <span class="ot">&lt;-</span> <span class="fu">cut</span>(data2<span class="sc">$</span>age, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">30</span>, <span class="dv">60</span>, <span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"age &lt; 30"</span>, <span class="st">"30 &lt;= age &lt; 60"</span>, <span class="st">"age &gt;= 60"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>age <span class="ot">&lt;-</span> <span class="fu">cut</span>(data2<span class="sc">$</span>age, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">30</span>, <span class="dv">60</span>, <span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"age &lt; 30"</span>, <span class="st">"30 &lt;= age &lt; 60"</span>, <span class="st">"age &gt;= 60"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></div><ul>
 <li>Đối với biến <code>bmi</code>, ta quyết định chia thành 3 nhóm: <code>bmi &lt; 25</code>, <code>25 &lt;= bmi &lt; 35</code>, <code>bmi &gt;= 35</code></li>
@@ -1625,7 +1646,7 @@ Ghi chú
 <div class="no-row-height column-margin column-container"><div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>bmi <span class="ot">&lt;-</span> <span class="fu">cut</span>(data2<span class="sc">$</span>bmi, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">20</span>, <span class="dv">35</span>, <span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"bmi &lt; 25"</span>, <span class="st">"25 &lt;= bmi &lt; 35"</span>, <span class="st">"bmi &gt;= 35"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>bmi <span class="ot">&lt;-</span> <span class="fu">cut</span>(data2<span class="sc">$</span>bmi, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">20</span>, <span class="dv">35</span>, <span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"bmi &lt; 25"</span>, <span class="st">"25 &lt;= bmi &lt; 35"</span>, <span class="st">"bmi &gt;= 35"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></div><ul>
 <li>Đối với biến <code>children</code>, ta quyết định chia thành 3 nhóm: <code>0 or 1 child</code>, <code>2 childs</code>, <code>&gt; 2 childs</code></li>
@@ -1634,9 +1655,9 @@ Ghi chú
 <div class="no-row-height column-margin column-container"><div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>children <span class="ot">&lt;-</span> <span class="fu">cut</span>(data2<span class="sc">$</span>children, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="fl">1.5</span>, <span class="fl">2.5</span>, <span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"0 or 1 child"</span>, <span class="st">"2 childs"</span>, <span class="st">"&gt; 2 childs"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>children <span class="ot">&lt;-</span> <span class="fu">cut</span>(data2<span class="sc">$</span>children, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="fl">1.5</span>, <span class="fl">2.5</span>, <span class="cn">Inf</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"0 or 1 child"</span>, <span class="st">"2 childs"</span>, <span class="st">"&gt; 2 childs"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-</div></div><p>Thực hiện biến đổi factor với các biến. Sau khi thực hiện ta có được (có khoảng 6 nhân tố)</p>
+</div></div><p>Thực hiện biến đổi factor với các biến.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>tibble [1,337 × 7] (S3: tbl_df/tbl/data.frame)
@@ -1652,7 +1673,7 @@ Ghi chú
 </section>
 <section id="phân-tích-phương-sai-anova-nhiều-nhân-tố-đã-chọn" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="phân-tích-phương-sai-anova-nhiều-nhân-tố-đã-chọn">Phân tích phương sai ANOVA nhiều nhân tố đã chọn</h3>
-<p>Trải qua quá trình tiền xử lí dữ liệu trên, ta có 6 nhân tố cần thực hiện phân tích ANOVA nhiều nhân tố bao gồm [<code>sex</code>, <code>smoker</code> <code>region</code> <code>age</code> <code>bmi</code> <code>children</code>] (lí do chọn 6 nhân tố: để có thể phân tích, khai thác tối đa các thông tin từ bộ dữ liệu đem lại). Vì vậy trước khi thực hiện ANOVA, tiến hành các giả định của 1 mô hình ANOVA nhiều nhân tố gồm:</p>
+<p>Trải qua quá trình tiền xử lí dữ liệu trên, ta có 6 biến cần thực hiện phân tích ANOVA nhiều nhân tố bao gồm [<code>sex</code>, <code>smoker</code> <code>region</code> <code>age</code> <code>bmi</code> <code>children</code>] (lí do chọn 6 biến: để có thể phân tích, khai thác tối đa các thông tin từ bộ dữ liệu đem lại). Vì vậy trước khi thực hiện ANOVA, tiến hành các giả định của 1 mô hình ANOVA nhiều nhân tố gồm:</p>
 <ul>
 <li>Các mẫu phải độc lập: trong dữ liệu này thì các quan sát đều được ghi nhận độc lập.<br>
 </li>
@@ -1663,9 +1684,9 @@ Ghi chú
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>av_residual <span class="ot">&lt;-</span> (<span class="fu">rstandard</span>(<span class="fu">aov</span>(data2<span class="sc">$</span>charges <span class="sc">~</span> data2<span class="sc">$</span>age <span class="sc">+</span> data2<span class="sc">$</span>sex <span class="sc">+</span> data2<span class="sc">$</span>bmi </span>
-<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>                              <span class="sc">+</span> data2<span class="sc">$</span>children <span class="sc">+</span> data2<span class="sc">$</span>smoker <span class="sc">+</span> data2<span class="sc">$</span>region)))</span>
-<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(av_residual)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>av_residual <span class="ot">&lt;-</span> (<span class="fu">rstandard</span>(<span class="fu">aov</span>(data2<span class="sc">$</span>charges <span class="sc">~</span> data2<span class="sc">$</span>age <span class="sc">+</span> data2<span class="sc">$</span>sex <span class="sc">+</span> data2<span class="sc">$</span>bmi </span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>                              <span class="sc">+</span> data2<span class="sc">$</span>children <span class="sc">+</span> data2<span class="sc">$</span>smoker <span class="sc">+</span> data2<span class="sc">$</span>region)))</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(av_residual)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -1697,7 +1718,7 @@ W = 0.92949, p-value &lt; 2.2e-16</code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(charges <span class="sc">~</span> <span class="fu">interaction</span>(sex,age,bmi,children,smoker,region), <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(charges <span class="sc">~</span> <span class="fu">interaction</span>(sex,age,bmi,children,smoker,region), <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Levene's Test for Homogeneity of Variance (center = median)
@@ -1708,7 +1729,7 @@ group  218  1.4416 0.0001271 ***
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -1720,7 +1741,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="callout-body-container callout-body">
 <p><strong>H0</strong>: Các nhóm có phương sai đồng nhất<br>
 <strong>H1</strong>: Các nhóm có phương sai không đồng nhất</p>
-<p>p_value = 0.07788 &gt; 0.05. Như vậy ta kết luận chấp nhận H0, <strong>phương sai đồng nhất</strong>.</p>
+<p>p_value = 0.0001271 &lt; 0.05. Như vậy ta bác bỏ H0, <strong>phương sai ở các nhóm không đồng nhất</strong>.</p>
 </div>
 </div>
 
@@ -1747,16 +1768,16 @@ Kết luận
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>nway_aov <span class="ot">&lt;-</span> <span class="cf">function</span>(dependent_variable, factor_list, data) {</span>
-<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>  formula <span class="ot">=</span> <span class="fu">as.formula</span>(<span class="fu">paste</span>(dependent_variable, <span class="st">"~"</span>, <span class="fu">paste</span>(factor_list, <span class="at">collapse =</span> <span class="st">"*"</span>)))</span>
-<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">aov</span>(formula, <span class="at">data =</span> data)</span>
-<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">summary</span>(result))</span>
-<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
-<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a>dependent_variable <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"charges"</span>)</span>
-<span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a>factor_list <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"sex"</span>, <span class="st">"bmi"</span>, <span class="st">"children"</span>, <span class="st">"smoker"</span>, <span class="st">"region"</span>)</span>
-<span id="cb88-9"><a href="#cb88-9" aria-hidden="true" tabindex="-1"></a>n_way <span class="ot">=</span> <span class="fu">nway_aov</span>(dependent_variable, factor_list, <span class="at">data=</span>data2)</span>
-<span id="cb88-10"><a href="#cb88-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(n_way)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>nway_aov <span class="ot">&lt;-</span> <span class="cf">function</span>(dependent_variable, factor_list, data) {</span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>  formula <span class="ot">=</span> <span class="fu">as.formula</span>(<span class="fu">paste</span>(dependent_variable, <span class="st">"~"</span>, <span class="fu">paste</span>(factor_list, <span class="at">collapse =</span> <span class="st">"*"</span>)))</span>
+<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">aov</span>(formula, <span class="at">data =</span> data)</span>
+<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">summary</span>(result))</span>
+<span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb90-6"><a href="#cb90-6" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
+<span id="cb90-7"><a href="#cb90-7" aria-hidden="true" tabindex="-1"></a>dependent_variable <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"charges"</span>)</span>
+<span id="cb90-8"><a href="#cb90-8" aria-hidden="true" tabindex="-1"></a>factor_list <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"sex"</span>, <span class="st">"bmi"</span>, <span class="st">"children"</span>, <span class="st">"smoker"</span>, <span class="st">"region"</span>)</span>
+<span id="cb90-9"><a href="#cb90-9" aria-hidden="true" tabindex="-1"></a>n_way <span class="ot">=</span> <span class="fu">nway_aov</span>(dependent_variable, factor_list, <span class="at">data=</span>data2)</span>
+<span id="cb90-10"><a href="#cb90-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(n_way)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>                                 Df    Sum Sq   Mean Sq  F value   Pr(&gt;F)    
@@ -1843,7 +1864,7 @@ Kết luận
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model <span class="ot">&lt;-</span> <span class="fu">powerTransform</span>(charges <span class="sc">~</span> ., <span class="at">data =</span> data2))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model <span class="ot">&lt;-</span> <span class="fu">powerTransform</span>(charges <span class="sc">~</span> ., <span class="at">data =</span> data2))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>bcPower Transformation to Normality 
@@ -1889,108 +1910,108 @@ Likelihood ratio test that no transformations are needed
 <p>Để kiểm định việc có nên thực hiện phép biến đổi biến hay không. Đặt giả thuyết:</p>
 <p><strong>H0</strong>: Không cần thực hiện phép transformation.<br>
 <strong>H1</strong>: Cần thực hiện tối thiểu một phép transformation.<br>
-Với p_value &lt; 2.22e-16. Bác bỏ H0, ta <strong>cần thực hiện tối thiểu một phép transformation</strong>. Như vậy ta quyết định <strong>thực hiện biến đổi biến với biến Y</strong> với lambda được đề xuất (Rounded Pwr) = 0.2.</p>
+Với p_value &lt; 2.22e-16. Bác bỏ H0, ta <strong>cần thực hiện tối thiểu một phép transformation</strong>. Như vậy ta quyết định <strong>thực hiện biến đổi biến với biến Y</strong> với lambda được đề xuất (Rounded Pwr) = 0.17.</p>
 </div>
 </div>
 
 <div class="no-row-height column-margin column-container"><div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>charges <span class="ot">&lt;-</span> data2<span class="sc">$</span>charges<span class="sc">^</span>(<span class="fl">0.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>charges <span class="ot">&lt;-</span> data2<span class="sc">$</span>charges<span class="sc">^</span>(<span class="fl">0.17</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></div><p>Thực hiện ANOVA</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>dependent_variable <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"charges"</span>)</span>
-<span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a>factor_list <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"sex"</span>, <span class="st">"bmi"</span>, <span class="st">"children"</span>, <span class="st">"smoker"</span>, <span class="st">"region"</span>)</span>
-<span id="cb93-3"><a href="#cb93-3" aria-hidden="true" tabindex="-1"></a>n_way <span class="ot">=</span> <span class="fu">nway_aov</span>(dependent_variable, factor_list, <span class="at">data=</span>data2)</span>
-<span id="cb93-4"><a href="#cb93-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(n_way)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                 Df Sum Sq Mean Sq  F value   Pr(&gt;F)    
-age                               2  317.6   158.8  465.751  &lt; 2e-16 ***
-sex                               1    1.4     1.4    4.179  0.04117 *  
-bmi                               2   14.5     7.2   21.250 8.76e-10 ***
-children                          2   22.8    11.4   33.489 7.49e-15 ***
-smoker                            1  877.2   877.2 2573.049  &lt; 2e-16 ***
-region                            3    4.9     1.6    4.837  0.00238 ** 
-age:sex                           2    0.4     0.2    0.593  0.55270    
-age:bmi                           3    0.3     0.1    0.327  0.80576    
-sex:bmi                           2    1.0     0.5    1.487  0.22648    
-age:children                      4   18.8     4.7   13.800 5.44e-11 ***
-sex:children                      2    0.2     0.1    0.348  0.70629    
-bmi:children                      4    1.2     0.3    0.886  0.47135    
-age:smoker                        2   33.9    16.9   49.695  &lt; 2e-16 ***
-sex:smoker                        1    2.9     2.9    8.439  0.00374 ** 
-bmi:smoker                        2   24.8    12.4   36.413 4.78e-16 ***
-children:smoker                   2    2.1     1.1    3.126  0.04429 *  
-age:region                        6    1.2     0.2    0.594  0.73497    
-sex:region                        3    0.0     0.0    0.030  0.99294    
-bmi:region                        6    2.0     0.3    0.984  0.43435    
-children:region                   6    2.5     0.4    1.246  0.28013    
-smoker:region                     3    2.5     0.8    2.491  0.05884 .  
-age:sex:bmi                       3    1.6     0.5    1.556  0.19852    
-age:sex:children                  4    0.5     0.1    0.334  0.85504    
-age:bmi:children                  6    2.0     0.3    0.971  0.44338    
-sex:bmi:children                  4    0.7     0.2    0.478  0.75188    
-age:sex:smoker                    2    0.7     0.3    1.017  0.36193    
-age:bmi:smoker                    2    0.3     0.2    0.512  0.59955    
-sex:bmi:smoker                    2    1.1     0.5    1.566  0.20938    
-age:children:smoker               4    3.9     1.0    2.885  0.02156 *  
-sex:children:smoker               2    0.0     0.0    0.038  0.96240    
-bmi:children:smoker               4    0.1     0.0    0.105  0.98090    
-age:sex:region                    6    0.4     0.1    0.190  0.97961    
-age:bmi:region                    8    2.4     0.3    0.878  0.53407    
-sex:bmi:region                    5    1.2     0.2    0.687  0.63304    
-age:children:region              11    2.5     0.2    0.676  0.76274    
-sex:children:region               6    2.5     0.4    1.245  0.28043    
-bmi:children:region               7    1.2     0.2    0.517  0.82196    
-age:smoker:region                 6    2.1     0.4    1.030  0.40414    
-sex:smoker:region                 3    1.3     0.4    1.281  0.27940    
-bmi:smoker:region                 5    0.4     0.1    0.234  0.94754    
-children:smoker:region            6    2.0     0.3    0.958  0.45243    
-age:sex:bmi:children              3    0.3     0.1    0.319  0.81150    
-age:sex:bmi:smoker                2    0.2     0.1    0.354  0.70164    
-age:sex:children:smoker           3    1.1     0.4    1.036  0.37554    
-age:bmi:children:smoker           2    0.1     0.1    0.192  0.82498    
-sex:bmi:children:smoker           2    0.1     0.1    0.167  0.84641    
-age:sex:bmi:region                5    1.1     0.2    0.620  0.68495    
-age:sex:children:region           7    1.2     0.2    0.482  0.84798    
-age:bmi:children:region           5    1.7     0.3    0.994  0.42029    
-sex:bmi:children:region           5    1.8     0.4    1.063  0.37904    
-age:sex:smoker:region             6    1.5     0.2    0.720  0.63338    
-age:bmi:smoker:region             4    1.0     0.3    0.763  0.54944    
-sex:bmi:smoker:region             3    0.5     0.2    0.493  0.68731    
-age:children:smoker:region        6    1.1     0.2    0.538  0.77954    
-sex:children:smoker:region        5    1.3     0.3    0.754  0.58350    
-bmi:children:smoker:region        3    0.9     0.3    0.859  0.46209    
-age:sex:children:smoker:region    1    0.2     0.2    0.557  0.45574    
-age:bmi:children:smoker:region    1    0.0     0.0    0.048  0.82579    
-Residuals                      1118  381.2     0.3                      
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
-</div>
-</div>
-<p>Dựa vào kết quả trên ta chọn các cặp nhân tố có sự tương tác với nhau: <code>age</code>, <code>children</code>, <code>smoker</code>.</p>
-<div class="cell">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>dependent_variable <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"charges"</span>)</span>
-<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a>factor_list <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"children"</span>, <span class="st">"smoker"</span>)</span>
+<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a>factor_list <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"sex"</span>, <span class="st">"bmi"</span>, <span class="st">"children"</span>, <span class="st">"smoker"</span>, <span class="st">"region"</span>)</span>
 <span id="cb95-3"><a href="#cb95-3" aria-hidden="true" tabindex="-1"></a>n_way <span class="ot">=</span> <span class="fu">nway_aov</span>(dependent_variable, factor_list, <span class="at">data=</span>data2)</span>
 <span id="cb95-4"><a href="#cb95-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(n_way)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
+<pre><code>                                 Df Sum Sq Mean Sq  F value   Pr(&gt;F)    
+age                               2  136.1    68.1  479.159  &lt; 2e-16 ***
+sex                               1    0.5     0.5    3.649  0.05637 .  
+bmi                               2    5.7     2.9   20.107 2.64e-09 ***
+children                          2    9.8     4.9   34.355 3.31e-15 ***
+smoker                            1  358.4   358.4 2523.224  &lt; 2e-16 ***
+region                            3    2.1     0.7    5.042  0.00179 ** 
+age:sex                           2    0.2     0.1    0.675  0.50952    
+age:bmi                           3    0.1     0.0    0.325  0.80766    
+sex:bmi                           2    0.4     0.2    1.539  0.21508    
+age:children                      4    8.2     2.1   14.478 1.57e-11 ***
+sex:children                      2    0.1     0.0    0.348  0.70588    
+bmi:children                      4    0.5     0.1    0.847  0.49568    
+age:smoker                        2   15.3     7.7   53.980  &lt; 2e-16 ***
+sex:smoker                        1    1.2     1.2    8.374  0.00388 ** 
+bmi:smoker                        2    9.7     4.8   34.102 4.20e-15 ***
+children:smoker                   2    1.0     0.5    3.345  0.03560 *  
+age:region                        6    0.5     0.1    0.642  0.69705    
+sex:region                        3    0.0     0.0    0.031  0.99270    
+bmi:region                        6    0.8     0.1    0.983  0.43530    
+children:region                   6    1.0     0.2    1.230  0.28804    
+smoker:region                     3    1.1     0.4    2.500  0.05810 .  
+age:sex:bmi                       3    0.7     0.2    1.582  0.19208    
+age:sex:children                  4    0.2     0.0    0.337  0.85287    
+age:bmi:children                  6    0.8     0.1    0.972  0.44275    
+sex:bmi:children                  4    0.3     0.1    0.465  0.76174    
+age:sex:smoker                    2    0.3     0.2    1.067  0.34426    
+age:bmi:smoker                    2    0.1     0.1    0.522  0.59321    
+sex:bmi:smoker                    2    0.4     0.2    1.489  0.22594    
+age:children:smoker               4    1.7     0.4    2.978  0.01844 *  
+sex:children:smoker               2    0.0     0.0    0.034  0.96676    
+bmi:children:smoker               4    0.1     0.0    0.107  0.98000    
+age:sex:region                    6    0.2     0.0    0.197  0.97780    
+age:bmi:region                    8    1.0     0.1    0.883  0.53032    
+sex:bmi:region                    5    0.5     0.1    0.665  0.64973    
+age:children:region              11    1.0     0.1    0.659  0.77803    
+sex:children:region               6    1.0     0.2    1.201  0.30319    
+bmi:children:region               7    0.5     0.1    0.512  0.82565    
+age:smoker:region                 6    0.9     0.1    1.018  0.41201    
+sex:smoker:region                 3    0.5     0.2    1.212  0.30406    
+bmi:smoker:region                 5    0.2     0.0    0.226  0.95134    
+children:smoker:region            6    0.8     0.1    0.914  0.48389    
+age:sex:bmi:children              3    0.1     0.0    0.322  0.80957    
+age:sex:bmi:smoker                2    0.1     0.1    0.363  0.69556    
+age:sex:children:smoker           3    0.4     0.1    0.999  0.39248    
+age:bmi:children:smoker           2    0.1     0.0    0.181  0.83461    
+sex:bmi:children:smoker           2    0.0     0.0    0.158  0.85374    
+age:sex:bmi:region                5    0.4     0.1    0.625  0.68057    
+age:sex:children:region           7    0.5     0.1    0.482  0.84808    
+age:bmi:children:region           5    0.7     0.1    0.982  0.42749    
+sex:bmi:children:region           5    0.7     0.1    1.053  0.38475    
+age:sex:smoker:region             6    0.6     0.1    0.692  0.65587    
+age:bmi:smoker:region             4    0.4     0.1    0.754  0.55535    
+sex:bmi:smoker:region             3    0.2     0.1    0.477  0.69824    
+age:children:smoker:region        6    0.4     0.1    0.522  0.79170    
+sex:children:smoker:region        5    0.5     0.1    0.699  0.62402    
+bmi:children:smoker:region        3    0.4     0.1    0.838  0.47327    
+age:sex:children:smoker:region    1    0.1     0.1    0.552  0.45785    
+age:bmi:children:smoker:region    1    0.0     0.0    0.045  0.83189    
+Residuals                      1118  158.8     0.1                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Dựa vào kết quả trên ta chọn các cặp biến có sự tương tác với nhau: <code>age</code>, <code>children</code>, <code>smoker</code>.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>dependent_variable <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"charges"</span>)</span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>factor_list <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"children"</span>, <span class="st">"smoker"</span>)</span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a>n_way <span class="ot">=</span> <span class="fu">nway_aov</span>(dependent_variable, factor_list, <span class="at">data=</span>data2)</span>
+<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(n_way)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
 <pre><code>                      Df Sum Sq Mean Sq  F value   Pr(&gt;F)    
-age                    2  317.6   158.8  440.481  &lt; 2e-16 ***
-children               2   22.7    11.3   31.451 4.54e-14 ***
-smoker                 1  880.8   880.8 2443.491  &lt; 2e-16 ***
-age:children           4   18.0     4.5   12.449 6.07e-10 ***
-age:smoker             2   33.3    16.7   46.201  &lt; 2e-16 ***
-children:smoker        2    2.7     1.4    3.759   0.0236 *  
-age:children:smoker    4    4.2     1.1    2.929   0.0200 *  
-Residuals           1319  475.5     0.4                      
+age                    2  136.1    68.1  455.474  &lt; 2e-16 ***
+children               2    9.7     4.8   32.420 1.80e-14 ***
+smoker                 1  359.7   359.7 2407.279  &lt; 2e-16 ***
+age:children           4    7.9     2.0   13.146 1.67e-10 ***
+age:smoker             2   15.1     7.5   50.363  &lt; 2e-16 ***
+children:smoker        2    1.2     0.6    4.011   0.0183 *  
+age:children:smoker    4    1.8     0.5    3.086   0.0153 *  
+Residuals           1319  197.1     0.1                      
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -2005,15 +2026,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>av_residual <span class="ot">&lt;-</span> (<span class="fu">rstandard</span>(<span class="fu">aov</span>(data2<span class="sc">$</span>charges <span class="sc">~</span> data2<span class="sc">$</span>age <span class="sc">+</span> data2<span class="sc">$</span>children <span class="sc">+</span> data2<span class="sc">$</span>smoker)))</span>
-<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(av_residual)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>av_residual <span class="ot">&lt;-</span> (<span class="fu">rstandard</span>(<span class="fu">aov</span>(data2<span class="sc">$</span>charges <span class="sc">~</span> data2<span class="sc">$</span>age <span class="sc">+</span> data2<span class="sc">$</span>children <span class="sc">+</span> data2<span class="sc">$</span>smoker)))</span>
+<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(av_residual)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Shapiro-Wilk normality test
 
 data:  av_residual
-W = 0.93199, p-value &lt; 2.2e-16</code></pre>
+W = 0.9338, p-value &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -2038,12 +2059,12 @@ W = 0.93199, p-value &lt; 2.2e-16</code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(charges <span class="sc">~</span> <span class="fu">interaction</span>(age,children,smoker), <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(charges <span class="sc">~</span> <span class="fu">interaction</span>(age,children,smoker), <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Levene's Test for Homogeneity of Variance (center = median)
         Df F value    Pr(&gt;F)    
-group   17  3.1767 1.315e-05 ***
+group   17   3.092 2.182e-05 ***
       1319                      
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
@@ -2061,7 +2082,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="callout-body-container callout-body">
 <p><strong>H0</strong>: Các nhóm có phương sai đồng nhất<br>
 <strong>H1</strong>: Các nhóm có phương sai không đồng nhất<br>
-Sau khi thực hiện biến đổi biến Y và thực hiện kiểm định phương sai đồng nhất. <strong>Bác bỏ H0</strong> với p_value = 1.315e-05 &lt; 0.05.</p>
+Sau khi thực hiện biến đổi biến Y và thực hiện kiểm định phương sai đồng nhất. <strong>Bác bỏ H0</strong> với p_value = 2.182e-05 &lt; 0.05.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -2078,14 +2099,21 @@ Kết luận
 </div>
 </div>
 </section>
-<section id="đề-xuất-cải-tiếnphân-tích-khác-1" class="level3">
+<section id="đề-xuất-cải-tiếnphân-tích-khác-1" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="đề-xuất-cải-tiếnphân-tích-khác-1">Đề xuất cải tiến/phân tích khác</h3>
 <p>Trong trường hợp với tập dữ liệu này, ta đề xuất sử dụng thống kê phi tham số cho các nhân tố ở các biến <code>age</code>, <code>children</code>, <code>smoker</code> với kiểm định Wilcox (biến có 2 nhân tố <code>smoker</code>) và Kruskal-Wallis Test (biến có 3 nhân tố- <code>age</code>, <code>children</code>). Sau đó tiến hành phân tích hậu định với package <code>FSA</code>.</p>
-<p><strong>Biến <code>age</code></strong></p>
+
+<div class="no-row-height column-margin column-container"><div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Trả lại kết quả biến đổi biến Y</span></span>
+<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a>data2<span class="sc">$</span>charges <span class="ot">&lt;-</span> data2<span class="sc">$</span>charges<span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="fl">0.17</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div></div><p><strong>Biến <code>age</code></strong></p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kruskal.test</span>(charges <span class="sc">~</span> age, <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kruskal.test</span>(charges <span class="sc">~</span> age, <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -2096,7 +2124,7 @@ Kruskal-Wallis chi-squared = 277.17, df = 2, p-value &lt; 2.2e-16</code></pre>
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dunnTest</span>(charges <span class="sc">~</span> age, <span class="at">data =</span> data2, <span class="at">method =</span> <span class="st">"holm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dunnTest</span>(charges <span class="sc">~</span> age, <span class="at">data =</span> data2, <span class="at">method =</span> <span class="st">"holm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>Dunn (1964) Kruskal-Wallis multiple comparison</code></pre>
@@ -2129,7 +2157,7 @@ Với p-value &lt; 2.2e-16 &lt; 0.05. Bác bỏ H0, có ít nhất 1 nhóm tuổ
 Thực hiện Dunn test, ta thấy được có sự khác biệt có ý nghĩa giữa từng nhóm tuổi với nhau.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="stats-modeling_files/figure-html/unnamed-chunk-49-1.png" class="img-fluid" width="672"></p>
+<p><img src="statistical-modeling-with-R_files/figure-html/unnamed-chunk-51-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </div>
@@ -2139,7 +2167,7 @@ Thực hiện Dunn test, ta thấy được có sự khác biệt có ý nghĩa 
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kruskal.test</span>(charges <span class="sc">~</span> children, <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kruskal.test</span>(charges <span class="sc">~</span> children, <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -2150,7 +2178,7 @@ Kruskal-Wallis chi-squared = 24.909, df = 2, p-value = 3.899e-06</code></pre>
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb109"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dunnTest</span>(charges <span class="sc">~</span> children, <span class="at">data =</span> data2, <span class="at">method =</span> <span class="st">"holm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dunnTest</span>(charges <span class="sc">~</span> children, <span class="at">data =</span> data2, <span class="at">method =</span> <span class="st">"holm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>Dunn (1964) Kruskal-Wallis multiple comparison</code></pre>
@@ -2183,7 +2211,7 @@ Với p-value = 3.899e-06 &lt; 0.05. Bác bỏ H0, có ít nhất 1 nhóm khác 
 Thực hiện Dunn test, ta thấy được có sự khác biệt có ý nghĩa giữa các nhóm <em>không có hoặc có 1 con</em> với nhóm <em>có 2 con trở lên</em>. Không có sự khác biệt có ý nghĩa giữa nhóm <em>có 2 con</em> và nhóm <em>có 2 con trở lên</em> với biến charges.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="stats-modeling_files/figure-html/unnamed-chunk-51-1.png" class="img-fluid" width="672"></p>
+<p><img src="statistical-modeling-with-R_files/figure-html/unnamed-chunk-53-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </div>
@@ -2193,7 +2221,7 @@ Thực hiện Dunn test, ta thấy được có sự khác biệt có ý nghĩa 
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(charges <span class="sc">~</span> smoker, <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(charges <span class="sc">~</span> smoker, <span class="at">data =</span> data2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -2218,7 +2246,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 <strong>H1</strong>: chi phí bảo hiểm giữa hai nhóm khác nhau Với p-value &lt; 2.2e-16 &lt; 0.05. Bác bỏ H0, kiểm định cho thấy có sự khác biệt giữa nhóm người hút thuốc và không hút thuốc đến biến charges.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="stats-modeling_files/figure-html/unnamed-chunk-53-1.png" class="img-fluid" width="672"></p>
+<p><img src="statistical-modeling-with-R_files/figure-html/unnamed-chunk-55-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </div>
@@ -2228,11 +2256,11 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 </section>
 <section id="hoạt-động-2" class="level1">
 <h1>Hoạt động 2</h1>
-<p>Tập dữ liệu sử dụng là tập <a href="https://www.kaggle.com/datasets/rafsunahmad/world-all-university-ranking-factors/data">Kaggle</a></p>
+<p>Tập dữ liệu ta quyết định sử dụng là tập <a href="https://www.kaggle.com/datasets/rafsunahmad/world-all-university-ranking-factors/data">Kaggle</a></p>
 <section id="giới-thiệu-đề-đề-tài-nguồn-gốc-của-dữ-liệu-giới-thiệu-các-biến" class="level2">
 <h2 class="anchored" data-anchor-id="giới-thiệu-đề-đề-tài-nguồn-gốc-của-dữ-liệu-giới-thiệu-các-biến">Giới thiệu đề “đề tài”, nguồn gốc của dữ liệu, giới thiệu các biến, …</h2>
 <p>Dữ liệu xếp hàng đại học trên thế giới được nguồn từ <a href="https://www.kaggle.com/datasets/rafsunahmad/world-all-university-ranking-factors/data">Kaggle</a>. Đây là tập dữ liệu xếp hạng các trường đại học trên thế giới.<br>
-Mục tiêu thực hiện: Sử dụng tập dữ liệu trên để <strong>dự báo điểm tổng xếp hạng (Overall Scores)</strong>. Theo ta đánh giá, đây là một tập dữ liệu thú vị và khó để dự đoán điểm tổng Overall, lí do là vì số điểm tổng Overall chính xác như một con số chỉ được quy ước cho các trường trong vòng TOP 200 hoặc khi điểm tổng đạt giá trị &gt; [55,60]. Khi điểm tổng thấp hơn thì bảng xếp hạng sẽ không còn để số điểm chính xác mà chỉ cho khoảng giá trị- <em>Vì cơ bản, bảng xếp hạng đại học này vốn được xây dựng cũng chỉ mang tính tham khảo tổng quát cho người sử dụng là người học, phụ huynh, doanh nghiệp</em>,… Ví dụ: Trường Michigan State University có <strong>hạng 50</strong> với điểm tổng là <strong>64.2</strong> trong khi trường University of Bayreuth có <strong>hạng 150</strong> sẽ có điểm tổng là trong khoảng <strong>47.4–49.2</strong>.</p>
+Mục tiêu thực hiện: Sử dụng tập dữ liệu trên để <strong>dự báo điểm tổng xếp hạng (Overall Scores)</strong>. Theo cá nhân đánh giá, đây là một tập dữ liệu thú vị và khó để dự đoán điểm tổng Overall, lí do là vì số điểm tổng Overall chính xác như một con số chỉ được quy ước cho các trường trong vòng TOP 200 hoặc khi điểm tổng đạt giá trị &gt; [55,60]. Khi điểm tổng thấp hơn thì bảng xếp hạng sẽ không còn để số điểm chính xác mà chỉ cho khoảng giá trị- <em>Vì cơ bản, bảng xếp hạng đại học này vốn được xây dựng cũng chỉ mang tính tham khảo tổng quát cho người sử dụng là người học, phụ huynh, doanh nghiệp</em>,… Ví dụ: Trường Michigan State University có <strong>hạng 50</strong> với điểm tổng là <strong>64.2</strong> trong khi trường University of Bayreuth có <strong>hạng 150</strong> sẽ có điểm tổng là trong khoảng <strong>47.4–49.2</strong>.</p>
 <p>Căn cứ vào nguồn của <a href="https://www.timeshighereducation.com/student/advice/world-university-rankings-explained">THE Ranking</a>, ta có thể giải thích ý nghĩa các biến như sau:</p>
 <table class="table">
 <caption><strong>Tên biến dữ liệu</strong></caption>
@@ -2300,15 +2328,15 @@ Mục tiêu thực hiện: Sử dụng tập dữ liệu trên để <strong>d�
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3[<span class="fu">sample</span>(<span class="fu">nrow</span>(data3)),]</span>
-<span id="cb115-3"><a href="#cb115-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Đổi tên biến</span></span>
-<span id="cb115-4"><a href="#cb115-4" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3 <span class="sc">%&gt;%</span> </span>
-<span id="cb115-5"><a href="#cb115-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">nation =</span> location, <span class="at">overall =</span> <span class="st">`</span><span class="at">Overall scores</span><span class="st">`</span>, </span>
-<span id="cb115-6"><a href="#cb115-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">research_quality =</span> <span class="st">`</span><span class="at">Research Quality Score</span><span class="st">`</span>, </span>
-<span id="cb115-7"><a href="#cb115-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">industry =</span> <span class="st">`</span><span class="at">Industry Score</span><span class="st">`</span>, <span class="at">international =</span> <span class="st">`</span><span class="at">International Outlook</span><span class="st">`</span>, </span>
-<span id="cb115-8"><a href="#cb115-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">research_environment =</span> <span class="st">`</span><span class="at">Research Environment Score</span><span class="st">`</span>, <span class="at">teaching =</span> <span class="st">`</span><span class="at">Teaching Score</span><span class="st">`</span>)</span>
-<span id="cb115-9"><a href="#cb115-9" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(data3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3[<span class="fu">sample</span>(<span class="fu">nrow</span>(data3)),]</span>
+<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Đổi tên biến</span></span>
+<span id="cb118-4"><a href="#cb118-4" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3 <span class="sc">%&gt;%</span> </span>
+<span id="cb118-5"><a href="#cb118-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">nation =</span> location, <span class="at">overall =</span> <span class="st">`</span><span class="at">Overall scores</span><span class="st">`</span>, </span>
+<span id="cb118-6"><a href="#cb118-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">research_quality =</span> <span class="st">`</span><span class="at">Research Quality Score</span><span class="st">`</span>, </span>
+<span id="cb118-7"><a href="#cb118-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">industry =</span> <span class="st">`</span><span class="at">Industry Score</span><span class="st">`</span>, <span class="at">international =</span> <span class="st">`</span><span class="at">International Outlook</span><span class="st">`</span>, </span>
+<span id="cb118-8"><a href="#cb118-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">research_environment =</span> <span class="st">`</span><span class="at">Research Environment Score</span><span class="st">`</span>, <span class="at">teaching =</span> <span class="st">`</span><span class="at">Teaching Score</span><span class="st">`</span>)</span>
+<span id="cb118-9"><a href="#cb118-9" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(data3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "rank"                      "ranking-institution-title"
@@ -2324,7 +2352,7 @@ Mục tiêu thực hiện: Sử dụng tập dữ liệu trên để <strong>d�
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a>skimr<span class="sc">::</span><span class="fu">skim</span>(data3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a>skimr<span class="sc">::</span><span class="fu">skim</span>(data3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -2551,7 +2579,7 @@ Nhận xét:
 <ul>
 <li>Dữ liệu có 910 quan sát và 9 biến (3 biến định dạng character và 6 biến dạng numeric).<br>
 </li>
-<li>Có 12 value ở biến <code>nation</code> bị khuyết. Sau khi làm điền giá trị khuyết, dựa vào tên quốc gia mà tạo nên biến mới <code>continent</code>: châu lục nhằm xây dựng mô hình thay sử dụng tên quốc gia.</li>
+<li>Có 12 value ở biến <code>nation</code> bị khuyết. Xem xét và điền vào giá trị khuyết hợp lí (có thể sử dụng mode cho quốc gia xuất hiện nhiều nhất), từ đó dựa vào tên quốc gia mà tạo nên biến mới <code>continent</code>: châu lục nhằm xây dựng mô hình thay vì sử dụng tên quốc gia.</li>
 <li>Cần loại bỏ đi biến <code>rank</code> và <code>ranking-institution-title</code>.</li>
 <li>Các biến <code>research_quality</code>, <code>industry</code>, <code>international</code>, <code>research_environment</code>, <code>teaching</code> có giá trị mean và median không quá chênh lệch nhau.</li>
 </ul>
@@ -2560,9 +2588,9 @@ Nhận xét:
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Tìm các giá trị bị thiếu tại biến `nation`</span></span>
-<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a>data3 <span class="sc">%&gt;%</span> </span>
-<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(nation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Tìm các giá trị bị thiếu tại biến `nation`</span></span>
+<span id="cb121-2"><a href="#cb121-2" aria-hidden="true" tabindex="-1"></a>data3 <span class="sc">%&gt;%</span> </span>
+<span id="cb121-3"><a href="#cb121-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(nation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 12 × 9
@@ -2588,17 +2616,17 @@ Nhận xét:
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Điền giá trị khuyết với tên Russian</span></span>
-<span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3 <span class="sc">%&gt;%</span> </span>
-<span id="cb120-3"><a href="#cb120-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">nation =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(nation), <span class="st">'Russian'</span>, nation))</span>
-<span id="cb120-4"><a href="#cb120-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Tạo biến continent với tên châu lục tương ứng với quốc gia</span></span>
-<span id="cb120-5"><a href="#cb120-5" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>continent <span class="ot">&lt;-</span> <span class="fu">countrycode</span>(<span class="at">sourcevar =</span> data3<span class="sc">$</span>nation, </span>
-<span id="cb120-6"><a href="#cb120-6" aria-hidden="true" tabindex="-1"></a>                               <span class="at">origin =</span> <span class="st">"country.name"</span>, </span>
-<span id="cb120-7"><a href="#cb120-7" aria-hidden="true" tabindex="-1"></a>                               <span class="at">destination =</span> <span class="st">"continent"</span>)</span>
-<span id="cb120-8"><a href="#cb120-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb120-9"><a href="#cb120-9" aria-hidden="true" tabindex="-1"></a><span class="do">## bỏ đi biến rank, ranking-institution-title, nation</span></span>
-<span id="cb120-10"><a href="#cb120-10" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3 <span class="sc">%&gt;%</span> </span>
-<span id="cb120-11"><a href="#cb120-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(rank, <span class="st">'ranking-institution-title'</span>, nation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb123"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Điền giá trị khuyết với tên Russian</span></span>
+<span id="cb123-2"><a href="#cb123-2" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3 <span class="sc">%&gt;%</span> </span>
+<span id="cb123-3"><a href="#cb123-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">nation =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(nation), <span class="st">'Russian'</span>, nation))</span>
+<span id="cb123-4"><a href="#cb123-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Tạo biến continent với tên châu lục tương ứng với quốc gia</span></span>
+<span id="cb123-5"><a href="#cb123-5" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>continent <span class="ot">&lt;-</span> <span class="fu">countrycode</span>(<span class="at">sourcevar =</span> data3<span class="sc">$</span>nation, </span>
+<span id="cb123-6"><a href="#cb123-6" aria-hidden="true" tabindex="-1"></a>                               <span class="at">origin =</span> <span class="st">"country.name"</span>, </span>
+<span id="cb123-7"><a href="#cb123-7" aria-hidden="true" tabindex="-1"></a>                               <span class="at">destination =</span> <span class="st">"continent"</span>)</span>
+<span id="cb123-8"><a href="#cb123-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb123-9"><a href="#cb123-9" aria-hidden="true" tabindex="-1"></a><span class="do">## bỏ đi biến rank, ranking-institution-title, nation</span></span>
+<span id="cb123-10"><a href="#cb123-10" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3 <span class="sc">%&gt;%</span> </span>
+<span id="cb123-11"><a href="#cb123-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(rank, <span class="st">'ranking-institution-title'</span>, nation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -2618,38 +2646,44 @@ Xử lí và làm sạch biến <code>overall</code>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo biến overall_num để lưu các giá trị numeric</span></span>
-<span id="cb121-2"><a href="#cb121-2" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overall_num &lt;- as.numeric(data3$overall)</span></span>
-<span id="cb121-3"><a href="#cb121-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-4"><a href="#cb121-4" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo biến overcheck1 lưu chặng dưới</span></span>
-<span id="cb121-5"><a href="#cb121-5" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overcheck1 &lt;- substr(data3$overall, 1, 4)</span></span>
-<span id="cb121-6"><a href="#cb121-6" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overcheck1 &lt;- as.numeric(data3$overcheck1)</span></span>
-<span id="cb121-7"><a href="#cb121-7" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overcheck1[!is.na(data3$overall_num)] &lt;- NA</span></span>
-<span id="cb121-8"><a href="#cb121-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-9"><a href="#cb121-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-10"><a href="#cb121-10" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo biến overcheck2 lưu chặng trên</span></span>
-<span id="cb121-11"><a href="#cb121-11" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overcheck2 &lt;- substr(data3$overall, 6, 9)</span></span>
-<span id="cb121-12"><a href="#cb121-12" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overcheck2 &lt;- as.numeric(data3$overcheck2)</span></span>
-<span id="cb121-13"><a href="#cb121-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-14"><a href="#cb121-14" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo giá trị với random có phân phối chuẩn trong khoảng (overcheck1, overcheck2)</span></span>
-<span id="cb121-15"><a href="#cb121-15" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overall_check &lt;- round(rtruncnorm(n=1,a=data3$overcheck1, b=data3$overcheck2),2)</span></span>
-<span id="cb121-16"><a href="#cb121-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-17"><a href="#cb121-17" aria-hidden="true" tabindex="-1"></a><span class="do">## merge overall_num và overall_check gán vào biến overall</span></span>
-<span id="cb121-18"><a href="#cb121-18" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overall_num[is.na(data3$overall_num)] &lt;- data3$overall_check[is.na(data3$overall_num)]</span></span>
-<span id="cb121-19"><a href="#cb121-19" aria-hidden="true" tabindex="-1"></a><span class="co"># data3$overall &lt;- data3$overall_num</span></span>
-<span id="cb121-20"><a href="#cb121-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-21"><a href="#cb121-21" aria-hidden="true" tabindex="-1"></a><span class="do">## xóa đi các biến đã thực hiện</span></span>
-<span id="cb121-22"><a href="#cb121-22" aria-hidden="true" tabindex="-1"></a><span class="co"># data3 &lt;- data3 %&gt;% </span></span>
-<span id="cb121-23"><a href="#cb121-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># select(-c(overall_num, overcheck1, overcheck2, overall_check))</span></span>
-<span id="cb121-24"><a href="#cb121-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb121-25"><a href="#cb121-25" aria-hidden="true" tabindex="-1"></a><span class="do">## lưu dataset với tên ranking_cleaned.csv</span></span>
-<span id="cb121-26"><a href="#cb121-26" aria-hidden="true" tabindex="-1"></a><span class="co"># write_csv(data3, "./data/ranking_cleaned.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="cn">NULL</span>)</span>
+<span id="cb124-2"><a href="#cb124-2" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo biến overall_num để lưu các giá trị numeric</span></span>
+<span id="cb124-3"><a href="#cb124-3" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overall_num <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(data3<span class="sc">$</span>overall)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: NAs introduced by coercion</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo biến overcheck1 lưu chặng dưới</span></span>
+<span id="cb126-2"><a href="#cb126-2" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overcheck1 <span class="ot">&lt;-</span> <span class="fu">substr</span>(data3<span class="sc">$</span>overall, <span class="dv">1</span>, <span class="dv">4</span>)</span>
+<span id="cb126-3"><a href="#cb126-3" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overcheck1 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(data3<span class="sc">$</span>overcheck1)</span>
+<span id="cb126-4"><a href="#cb126-4" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overcheck1[<span class="sc">!</span><span class="fu">is.na</span>(data3<span class="sc">$</span>overall_num)] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb126-5"><a href="#cb126-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-6"><a href="#cb126-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-7"><a href="#cb126-7" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo biến overcheck2 lưu chặng trên</span></span>
+<span id="cb126-8"><a href="#cb126-8" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overcheck2 <span class="ot">&lt;-</span> <span class="fu">substr</span>(data3<span class="sc">$</span>overall, <span class="dv">6</span>, <span class="dv">9</span>)</span>
+<span id="cb126-9"><a href="#cb126-9" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overcheck2 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(data3<span class="sc">$</span>overcheck2)</span>
+<span id="cb126-10"><a href="#cb126-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-11"><a href="#cb126-11" aria-hidden="true" tabindex="-1"></a><span class="do">## tạo giá trị với random có phân phối chuẩn trong khoảng (overcheck1, overcheck2)</span></span>
+<span id="cb126-12"><a href="#cb126-12" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overall_check <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">rtruncnorm</span>(<span class="at">n=</span><span class="dv">1</span>,<span class="at">a=</span>data3<span class="sc">$</span>overcheck1, <span class="at">b=</span>data3<span class="sc">$</span>overcheck2),<span class="dv">2</span>)</span>
+<span id="cb126-13"><a href="#cb126-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-14"><a href="#cb126-14" aria-hidden="true" tabindex="-1"></a><span class="do">## merge overall_num và overall_check gán vào biến overall</span></span>
+<span id="cb126-15"><a href="#cb126-15" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overall_num[<span class="fu">is.na</span>(data3<span class="sc">$</span>overall_num)] <span class="ot">&lt;-</span> data3<span class="sc">$</span>overall_check[<span class="fu">is.na</span>(data3<span class="sc">$</span>overall_num)]</span>
+<span id="cb126-16"><a href="#cb126-16" aria-hidden="true" tabindex="-1"></a>data3<span class="sc">$</span>overall <span class="ot">&lt;-</span> data3<span class="sc">$</span>overall_num</span>
+<span id="cb126-17"><a href="#cb126-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-18"><a href="#cb126-18" aria-hidden="true" tabindex="-1"></a><span class="do">## xóa đi các biến đã thực hiện</span></span>
+<span id="cb126-19"><a href="#cb126-19" aria-hidden="true" tabindex="-1"></a>data3 <span class="ot">&lt;-</span> data3 <span class="sc">%&gt;%</span> </span>
+<span id="cb126-20"><a href="#cb126-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(overall_num, overcheck1, overcheck2, overall_check))</span>
+<span id="cb126-21"><a href="#cb126-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-22"><a href="#cb126-22" aria-hidden="true" tabindex="-1"></a><span class="do">## lưu dataset với tên ranking_cleaned.csv</span></span>
+<span id="cb126-23"><a href="#cb126-23" aria-hidden="true" tabindex="-1"></a><span class="co">#write_csv(data3, "./data/ranking_cleaned.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a>data3_clean <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"./data/ranking_cleaned.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb127"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a>data3_clean <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"./data/ranking_cleaned.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 910 Columns: 7
@@ -2670,9 +2704,9 @@ dbl (6): overall, research_quality, industry, international, research_enviro...
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a>data3_clean <span class="ot">&lt;-</span> <span class="fu">dummy_cols</span>(data3_clean, <span class="at">select_columns =</span> <span class="st">'continent'</span>)</span>
-<span id="cb124-2"><a href="#cb124-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Loại bỏ biến continent sau khi tạo biến giả</span></span>
-<span id="cb124-3"><a href="#cb124-3" aria-hidden="true" tabindex="-1"></a>data3_clean <span class="ot">&lt;-</span> <span class="fu">subset</span>(data3_clean, <span class="at">select =</span> <span class="sc">-</span>continent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a>data3_clean <span class="ot">&lt;-</span> <span class="fu">dummy_cols</span>(data3_clean, <span class="at">select_columns =</span> <span class="st">'continent'</span>)</span>
+<span id="cb129-2"><a href="#cb129-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Loại bỏ biến continent sau khi tạo biến giả</span></span>
+<span id="cb129-3"><a href="#cb129-3" aria-hidden="true" tabindex="-1"></a>data3_clean <span class="ot">&lt;-</span> <span class="fu">subset</span>(data3_clean, <span class="at">select =</span> <span class="sc">-</span>continent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <p>Sau khi làm sạch dữ liệu như đã trình bày ở trên, ta có dữ liệu hoàn chỉnh về bảng xếp hạng đại học như sau:</p>
@@ -2684,7 +2718,7 @@ dbl (6): overall, research_quality, industry, international, research_enviro...
 1    34.2             68.9     68.9          74.2                 14.6     19.9
 2    34.2             77.4     38.3          37.4                 16.1     19.4
 3    46.2             93.6     52.3          91.2                 22.2     21.3
-4    31.3             70.8     52.4          46.1                 12       11.8
+4    31.4             70.8     52.4          46.1                 12       11.8
 5    46.2             78       94.6          84.6                 33       19  
 6    12.6             41.2     18.4          25.3                 12.9     10.7
 # ℹ 5 more variables: continent_Africa &lt;int&gt;, continent_Americas &lt;int&gt;,
@@ -2696,15 +2730,15 @@ dbl (6): overall, research_quality, industry, international, research_enviro...
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data3_clean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data3_clean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    overall      research_quality    industry      international  
  Min.   :12.60   Min.   :13.30    Min.   :  2.20   Min.   :18.40  
- 1st Qu.:23.05   1st Qu.:47.45    1st Qu.: 33.12   1st Qu.:39.60  
+ 1st Qu.:23.04   1st Qu.:47.45    1st Qu.: 33.12   1st Qu.:39.60  
  Median :34.22   Median :64.30    Median : 54.85   Median :54.65  
- Mean   :35.68   Mean   :61.66    Mean   : 52.94   Mean   :57.75  
- 3rd Qu.:44.31   3rd Qu.:77.00    3rd Qu.: 68.50   3rd Qu.:76.17  
+ Mean   :35.67   Mean   :61.66    Mean   : 52.94   Mean   :57.75  
+ 3rd Qu.:44.32   3rd Qu.:77.00    3rd Qu.: 68.50   3rd Qu.:76.17  
  Max.   :94.80   Max.   :98.60    Max.   :100.00   Max.   :99.00  
  research_environment    teaching     continent_Africa  continent_Americas
  Min.   : 6.60        Min.   : 6.70   Min.   :0.00000   Min.   :0.0000    
@@ -2724,7 +2758,7 @@ dbl (6): overall, research_quality, industry, international, research_enviro...
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="stats-modeling_files/figure-html/unnamed-chunk-63-1.png" class="img-fluid" width="672"></p>
+<p><img src="statistical-modeling-with-R_files/figure-html/unnamed-chunk-65-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -2751,15 +2785,15 @@ Tuy nhiên ta cũng thấy được các dữ liệu ngoại lai chủ yếu xu�
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb128"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href="#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb128-2"><a href="#cb128-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Tạo id column</span></span>
-<span id="cb128-3"><a href="#cb128-3" aria-hidden="true" tabindex="-1"></a>data3_clean<span class="sc">$</span>id <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(data3_clean)</span>
-<span id="cb128-4"><a href="#cb128-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb128-5"><a href="#cb128-5" aria-hidden="true" tabindex="-1"></a><span class="co">#sử dụng 80% cho tập training và 20% cho tập validation</span></span>
-<span id="cb128-6"><a href="#cb128-6" aria-hidden="true" tabindex="-1"></a>train <span class="ot">&lt;-</span> data3_clean <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">sample_frac</span>(<span class="fl">0.8</span>)</span>
-<span id="cb128-7"><a href="#cb128-7" aria-hidden="true" tabindex="-1"></a>val  <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">anti_join</span>(data3_clean, train, <span class="at">by =</span> <span class="st">'id'</span>)</span>
-<span id="cb128-8"><a href="#cb128-8" aria-hidden="true" tabindex="-1"></a>train <span class="ot">&lt;-</span> <span class="fu">subset</span>(train, <span class="at">select =</span> <span class="sc">-</span>id)</span>
-<span id="cb128-9"><a href="#cb128-9" aria-hidden="true" tabindex="-1"></a>val <span class="ot">&lt;-</span> <span class="fu">subset</span>(val, <span class="at">select =</span> <span class="sc">-</span>id)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb133-2"><a href="#cb133-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Tạo id column</span></span>
+<span id="cb133-3"><a href="#cb133-3" aria-hidden="true" tabindex="-1"></a>data3_clean<span class="sc">$</span>id <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(data3_clean)</span>
+<span id="cb133-4"><a href="#cb133-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-5"><a href="#cb133-5" aria-hidden="true" tabindex="-1"></a><span class="co">#sử dụng 80% cho tập training và 20% cho tập validation</span></span>
+<span id="cb133-6"><a href="#cb133-6" aria-hidden="true" tabindex="-1"></a>train <span class="ot">&lt;-</span> data3_clean <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">sample_frac</span>(<span class="fl">0.8</span>)</span>
+<span id="cb133-7"><a href="#cb133-7" aria-hidden="true" tabindex="-1"></a>val  <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">anti_join</span>(data3_clean, train, <span class="at">by =</span> <span class="st">'id'</span>)</span>
+<span id="cb133-8"><a href="#cb133-8" aria-hidden="true" tabindex="-1"></a>train <span class="ot">&lt;-</span> <span class="fu">subset</span>(train, <span class="at">select =</span> <span class="sc">-</span>id)</span>
+<span id="cb133-9"><a href="#cb133-9" aria-hidden="true" tabindex="-1"></a>val <span class="ot">&lt;-</span> <span class="fu">subset</span>(val, <span class="at">select =</span> <span class="sc">-</span>id)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -2768,8 +2802,8 @@ Tuy nhiên ta cũng thấy được các dữ liệu ngoại lai chủ yếu xu�
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(overall <span class="sc">~</span> ., <span class="at">data =</span> train)</span>
-<span id="cb129-2"><a href="#cb129-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb134"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(overall <span class="sc">~</span> ., <span class="at">data =</span> train)</span>
+<span id="cb134-2"><a href="#cb134-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -2778,27 +2812,27 @@ lm(formula = overall ~ ., data = train)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--5.5662 -1.2103  0.2276  1.3404 13.1211 
+-5.6889 -1.2189  0.2252  1.3449 13.2076 
 
 Coefficients: (1 not defined because of singularities)
                       Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)          -8.383919   0.558408 -15.014   &lt;2e-16 ***
-research_quality      0.297673   0.005609  53.070   &lt;2e-16 ***
-industry              0.057805   0.004660  12.404   &lt;2e-16 ***
-international         0.104248   0.005229  19.938   &lt;2e-16 ***
-research_environment  0.316059   0.014707  21.490   &lt;2e-16 ***
-teaching              0.338660   0.015302  22.132   &lt;2e-16 ***
-continent_Africa      0.352967   0.607556   0.581    0.561    
-continent_Americas    0.256093   0.440488   0.581    0.561    
-continent_Asia        0.284656   0.437447   0.651    0.515    
-continent_Europe      0.251561   0.415399   0.606    0.545    
+(Intercept)          -8.403188   0.558418 -15.048   &lt;2e-16 ***
+research_quality      0.297894   0.005609  53.108   &lt;2e-16 ***
+industry              0.057967   0.004660  12.439   &lt;2e-16 ***
+international         0.104136   0.005229  19.916   &lt;2e-16 ***
+research_environment  0.315540   0.014707  21.455   &lt;2e-16 ***
+teaching              0.339164   0.015302  22.165   &lt;2e-16 ***
+continent_Africa      0.342816   0.607566   0.564    0.573    
+continent_Americas    0.260441   0.440495   0.591    0.555    
+continent_Asia        0.283168   0.437455   0.647    0.518    
+continent_Europe      0.257279   0.415406   0.619    0.536    
 continent_Oceania           NA         NA      NA       NA    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 2.281 on 718 degrees of freedom
 Multiple R-squared:  0.9794,    Adjusted R-squared:  0.9791 
-F-statistic:  3785 on 9 and 718 DF,  p-value: &lt; 2.2e-16</code></pre>
+F-statistic:  3787 on 9 and 718 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -2817,17 +2851,17 @@ Xây dựng mô hình hồi quy tuyến tính giữa overall và tất cả các
 </li>
 <li><strong>H1</strong>: <span class="math inline">\exists {\beta _i} \ne 0</span><br>
 Với p-value: &lt; 2.2e-16 ở kết quả trên, ta kết luận bác bỏ H0, tồn tại ít nhất 1 <span class="math inline">{\beta _i} \ne 0</span>. Vì vậy, ta xây dựng mô hình thứ 2, lần này chỉ có các biến có ý nghĩa với p_value &lt; 0.05: <code>research_quality</code>, <code>industry</code>, <code>international</code>, <code>research_environment</code>, <code>teaching</code><br>
-<strong>Ngoài ra, khá bất ngờ khi vị trí địa lí của châu lục (có thể quốc gia sẽ có) lại không có ý nghĩa cho việc xây dựng mô hình dự báo điểm tổng cho chất lượng trường đại học/viện nghiên cứu</strong>.</li>
+<strong>Ngoài ra, từ góc độ cá nhân người thực hiện cũng khá bất ngờ khi vị trí địa lí của châu lục (có thể quốc gia sẽ có) lại không có ý nghĩa cho việc xây dựng mô hình dự báo điểm tổng cho chất lượng trường đại học/viện nghiên cứu</strong>.</li>
 </ul>
 </div>
 </div>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1" aria-hidden="true" tabindex="-1"></a>model_ranking <span class="ot">&lt;-</span> <span class="fu">lm</span>(overall <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
-<span id="cb131-2"><a href="#cb131-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> research_environment </span>
-<span id="cb131-3"><a href="#cb131-3" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> teaching, <span class="at">data =</span> train)</span>
-<span id="cb131-4"><a href="#cb131-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb136"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a>model_ranking <span class="ot">&lt;-</span> <span class="fu">lm</span>(overall <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
+<span id="cb136-2"><a href="#cb136-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> research_environment </span>
+<span id="cb136-3"><a href="#cb136-3" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> teaching, <span class="at">data =</span> train)</span>
+<span id="cb136-4"><a href="#cb136-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -2837,26 +2871,26 @@ lm(formula = overall ~ research_quality + industry + international +
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--5.5672 -1.2178  0.2307  1.3492 13.0951 
+-5.6932 -1.2400  0.2012  1.3499 13.1857 
 
 Coefficients:
                       Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)          -8.084766   0.330797  -24.44   &lt;2e-16 ***
-research_quality      0.297855   0.005567   53.51   &lt;2e-16 ***
-industry              0.057675   0.004537   12.71   &lt;2e-16 ***
-international         0.103106   0.004899   21.05   &lt;2e-16 ***
-research_environment  0.315349   0.014374   21.94   &lt;2e-16 ***
-teaching              0.339940   0.014909   22.80   &lt;2e-16 ***
+(Intercept)          -8.102367   0.330801  -24.49   &lt;2e-16 ***
+research_quality      0.298073   0.005567   53.54   &lt;2e-16 ***
+industry              0.057830   0.004537   12.75   &lt;2e-16 ***
+international         0.103014   0.004899   21.03   &lt;2e-16 ***
+research_environment  0.314909   0.014374   21.91   &lt;2e-16 ***
+teaching              0.340376   0.014909   22.83   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 2.276 on 722 degrees of freedom
-Multiple R-squared:  0.9793,    Adjusted R-squared:  0.9792 
-F-statistic:  6847 on 5 and 722 DF,  p-value: &lt; 2.2e-16</code></pre>
+Multiple R-squared:  0.9794,    Adjusted R-squared:  0.9792 
+F-statistic:  6849 on 5 and 722 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb138"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    research_quality             industry        international 
@@ -2869,9 +2903,9 @@ research_environment             teaching
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb135"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb135-1"><a href="#cb135-1" aria-hidden="true" tabindex="-1"></a>model_ranking <span class="ot">&lt;-</span> <span class="fu">lm</span>(overall <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
-<span id="cb135-2"><a href="#cb135-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> teaching, <span class="at">data =</span> train)</span>
-<span id="cb135-3"><a href="#cb135-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb140"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a>model_ranking <span class="ot">&lt;-</span> <span class="fu">lm</span>(overall <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
+<span id="cb140-2"><a href="#cb140-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> teaching, <span class="at">data =</span> train)</span>
+<span id="cb140-3"><a href="#cb140-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -2881,25 +2915,25 @@ lm(formula = overall ~ research_quality + industry + international +
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--8.3426 -1.8940  0.1449  2.0561 12.1564 
+-8.3503 -1.8960  0.1448  2.0365 12.2482 
 
 Coefficients:
                    Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)      -10.750037   0.396935  -27.08   &lt;2e-16 ***
-research_quality   0.315180   0.007109   44.34   &lt;2e-16 ***
-industry           0.090442   0.005526   16.36   &lt;2e-16 ***
-international      0.108515   0.006312   17.19   &lt;2e-16 ***
-teaching           0.629824   0.008908   70.71   &lt;2e-16 ***
+(Intercept)      -10.763920   0.396716  -27.13   &lt;2e-16 ***
+research_quality   0.315374   0.007105   44.39   &lt;2e-16 ***
+industry           0.090551   0.005523   16.39   &lt;2e-16 ***
+international      0.108415   0.006308   17.19   &lt;2e-16 ***
+teaching           0.629856   0.008903   70.75   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 2.936 on 723 degrees of freedom
+Residual standard error: 2.934 on 723 degrees of freedom
 Multiple R-squared:  0.9656,    Adjusted R-squared:  0.9654 
-F-statistic:  5070 on 4 and 723 DF,  p-value: &lt; 2.2e-16</code></pre>
+F-statistic:  5078 on 4 and 723 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb137"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb137-1"><a href="#cb137-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb142"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>research_quality         industry    international         teaching 
@@ -2915,14 +2949,14 @@ F-statistic:  5070 on 4 and 723 DF,  p-value: &lt; 2.2e-16</code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(<span class="fu">resid</span>(model_ranking))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb144"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb144-1"><a href="#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(<span class="fu">resid</span>(model_ranking))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Shapiro-Wilk normality test
 
 data:  resid(model_ranking)
-W = 0.99694, p-value = 0.1845</code></pre>
+W = 0.99692, p-value = 0.1798</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -2938,26 +2972,26 @@ W = 0.99694, p-value = 0.1845</code></pre>
 <p>Đặt giả thuyết:</p>
 <p><strong>H0</strong>: <span class="math inline">{\varepsilon _i}</span> có phân phối chuẩn<br>
 <strong>H1</strong>: <span class="math inline">{\varepsilon _i}</span> không có phân phối chuẩn</p>
-<p>Ta không bác bỏ H0, p-value = 0.1845 &gt; 0.05 <strong>sai số của mô hình có phân phối chuẩn</strong></p>
+<p>Ta không bác bỏ H0, p-value = 0.1798 &gt; 0.05 <strong>sai số của mô hình có phân phối chuẩn</strong></p>
 </div>
 </div>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(model_ranking), <span class="at">mu =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb146"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(model_ranking), <span class="at">mu =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     One Sample t-test
 
 data:  resid(model_ranking)
-t = -4.8245e-17, df = 727, p-value = 1
+t = -2.0954e-16, df = 727, p-value = 1
 alternative hypothesis: true mean is not equal to 0
 95 percent confidence interval:
- -0.2130196  0.2130196
+ -0.2129022  0.2129022
 sample estimates:
-   mean of x 
--5.23485e-18 </code></pre>
+    mean of x 
+-2.272357e-17 </code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -2979,12 +3013,12 @@ sample estimates:
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncvTest</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb148"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb148-1"><a href="#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncvTest</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Non-constant Variance Score Test 
 Variance formula: ~ fitted.values 
-Chisquare = 16.36199, Df = 1, p = 5.2324e-05</code></pre>
+Chisquare = 16.37145, Df = 1, p = 5.2063e-05</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
@@ -3000,29 +3034,29 @@ Chisquare = 16.36199, Df = 1, p = 5.2324e-05</code></pre>
 <p>Đặt giả thuyết</p>
 <p><strong>H0</strong>: phương sai không thay đổi<br>
 <strong>H1</strong>: phương sai thay đổi</p>
-<p>Ta bác bỏ H0 với p_value &lt; 5.2324e-05 &lt; 0.05. <strong>Mô hình không thỏa mãn tính ổn định của phương sai</strong>, phương sai của sai số thay đổi.</p>
+<p>Ta bác bỏ H0 với p_value &lt; 5.2063e-05 &lt; 0.05. <strong>Mô hình không thỏa mãn tính ổn định của phương sai</strong>, phương sai của sai số thay đổi.</p>
 </div>
 </div>
 <p><strong>Như vậy</strong>, mô hình không thỏa mãn tính ổn định của phương sai. Ta quyết định cần thực hiện các phép biến đổi biến (trasformation) với phương pháp Box-Cox và vì chỉ có duy nhất điều kiện 3 là tính ổn định của phương sai bị vi phạm, nên ta chọn kiểm tra liệu có nên biến đổi đối với biến phụ thuộc <code>overall</code> hay không.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb145"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model <span class="ot">&lt;-</span> <span class="fu">powerTransform</span>(overall <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
-<span id="cb145-2"><a href="#cb145-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> teaching, <span class="at">data =</span> train))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb150"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb150-1"><a href="#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model <span class="ot">&lt;-</span> <span class="fu">powerTransform</span>(overall <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
+<span id="cb150-2"><a href="#cb150-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> teaching, <span class="at">data =</span> train))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>bcPower Transformation to Normality 
    Est Power Rounded Pwr Wald Lwr Bnd Wald Upr Bnd
-Y1    1.0838        1.08       1.0272       1.1405
+Y1    1.0846        1.08       1.0281       1.1411
 
 Likelihood ratio test that transformation parameter is equal to 0
  (log transformation)
                            LRT df       pval
-LR test, lambda = (0) 752.5344  1 &lt; 2.22e-16
+LR test, lambda = (0) 755.2951  1 &lt; 2.22e-16
 
 Likelihood ratio test that no transformation is needed
                            LRT df      pval
-LR test, lambda = (1) 8.185991  1 0.0042215</code></pre>
+LR test, lambda = (1) 8.365487  1 0.0038241</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -3063,9 +3097,9 @@ Với p_value = 0.004 &lt; 0.05. Bác bỏ H0, ta <strong>cần thực hiện t�
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a>model_ranking <span class="ot">&lt;-</span> <span class="fu">lm</span>((overall)<span class="sc">^</span><span class="fl">1.08</span> <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
-<span id="cb147-2"><a href="#cb147-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> teaching, <span class="at">data =</span> train)</span>
-<span id="cb147-3"><a href="#cb147-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb152"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb152-1"><a href="#cb152-1" aria-hidden="true" tabindex="-1"></a>model_ranking <span class="ot">&lt;-</span> <span class="fu">lm</span>((overall)<span class="sc">^</span><span class="fl">1.08</span> <span class="sc">~</span> research_quality <span class="sc">+</span> industry </span>
+<span id="cb152-2"><a href="#cb152-2" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">+</span> international <span class="sc">+</span> teaching, <span class="at">data =</span> train)</span>
+<span id="cb152-3"><a href="#cb152-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -3075,25 +3109,25 @@ lm(formula = (overall)^1.08 ~ research_quality + industry + international +
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--12.2928  -2.7123   0.2635   2.8333  16.9552 
+-12.3033  -2.7348   0.2766   2.8559  17.0822 
 
 Coefficients:
                    Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)      -18.720681   0.562147  -33.30   &lt;2e-16 ***
-research_quality   0.445066   0.010068   44.21   &lt;2e-16 ***
-industry           0.124853   0.007827   15.95   &lt;2e-16 ***
-international      0.152519   0.008939   17.06   &lt;2e-16 ***
-teaching           0.938471   0.012615   74.39   &lt;2e-16 ***
+(Intercept)      -18.739179   0.561765  -33.36   &lt;2e-16 ***
+research_quality   0.445331   0.010061   44.26   &lt;2e-16 ***
+industry           0.125006   0.007821   15.98   &lt;2e-16 ***
+international      0.152375   0.008933   17.06   &lt;2e-16 ***
+teaching           0.938510   0.012607   74.45   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 4.158 on 723 degrees of freedom
-Multiple R-squared:  0.9671,    Adjusted R-squared:  0.9669 
-F-statistic:  5314 on 4 and 723 DF,  p-value: &lt; 2.2e-16</code></pre>
+Residual standard error: 4.155 on 723 degrees of freedom
+Multiple R-squared:  0.9672,    Adjusted R-squared:  0.967 
+F-statistic:  5323 on 4 and 723 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb149"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb149-1"><a href="#cb149-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb154"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb154-1"><a href="#cb154-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>research_quality         industry    international         teaching 
@@ -3103,14 +3137,14 @@ F-statistic:  5314 on 4 and 723 DF,  p-value: &lt; 2.2e-16</code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb151"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb151-1"><a href="#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(<span class="fu">resid</span>(model_ranking))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb156"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb156-1"><a href="#cb156-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(<span class="fu">resid</span>(model_ranking))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Shapiro-Wilk normality test
 
 data:  resid(model_ranking)
-W = 0.99754, p-value = 0.3572</code></pre>
+W = 0.99752, p-value = 0.3501</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -3126,26 +3160,26 @@ W = 0.99754, p-value = 0.3572</code></pre>
 <p>Đặt giả thuyết:</p>
 <p><strong>H0</strong>: <span class="math inline">{\varepsilon _i}</span> có phân phối chuẩn<br>
 <strong>H1</strong>: <span class="math inline">{\varepsilon _i}</span> không có phân phối chuẩn</p>
-<p>Ta không bác bỏ H0, p-value = 0.3572 &gt; 0.05 <strong>sai số của mô hình có phân phối chuẩn</strong></p>
+<p>Ta không bác bỏ H0, p-value = 0.3501 &gt; 0.05 <strong>sai số của mô hình có phân phối chuẩn</strong></p>
 </div>
 </div>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb153"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb153-1"><a href="#cb153-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(model_ranking), <span class="at">mu =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb158"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(model_ranking), <span class="at">mu =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     One Sample t-test
 
 data:  resid(model_ranking)
-t = 1.834e-15, df = 727, p-value = 1
+t = 8.7e-16, df = 727, p-value = 1
 alternative hypothesis: true mean is not equal to 0
 95 percent confidence interval:
- -0.3016825  0.3016825
+ -0.3014775  0.3014775
 sample estimates:
-   mean of x 
-2.818306e-16 </code></pre>
+  mean of x 
+1.33599e-16 </code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -3167,12 +3201,12 @@ sample estimates:
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb155"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb155-1"><a href="#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncvTest</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb160"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb160-1"><a href="#cb160-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncvTest</span>(model_ranking)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Non-constant Variance Score Test 
 Variance formula: ~ fitted.values 
-Chisquare = 9.973142, Df = 1, p = 0.0015884</code></pre>
+Chisquare = 9.955284, Df = 1, p = 0.0016039</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -3188,7 +3222,7 @@ Chisquare = 9.973142, Df = 1, p = 0.0015884</code></pre>
 <p>Đặt giả thuyết</p>
 <p><strong>H0</strong>: phương sai không thay đổi<br>
 <strong>H1</strong>: phương sai thay đổi</p>
-<p>Ta bác bỏ H0 với p_value = 0.0015884 &lt; 0.05. <strong>Mô hình không thỏa mãn tính ổn định của phương sai</strong>, phương sai của sai số thay đổi.</p>
+<p>Ta bác bỏ H0 với p_value = 0.0016039 &lt; 0.05. <strong>Mô hình không thỏa mãn tính ổn định của phương sai</strong>, phương sai của sai số thay đổi.</p>
 </div>
 </div>
 <section id="phân-tích-kết-quả" class="level3">
@@ -3197,14 +3231,14 @@ Chisquare = 9.973142, Df = 1, p = 0.0015884</code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb157"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> <span class="fu">predict</span>(model_ranking, <span class="at">newdata =</span> val)</span>
-<span id="cb157-2"><a href="#cb157-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Trả lại giá trị ban đầu</span></span>
-<span id="cb157-3"><a href="#cb157-3" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> y_hat<span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="fl">1.08</span>)</span>
-<span id="cb157-4"><a href="#cb157-4" aria-hidden="true" tabindex="-1"></a>MSE <span class="ot">&lt;-</span> <span class="fu">mean</span>((val<span class="sc">$</span>overall <span class="sc">-</span> y_hat)<span class="sc">^</span><span class="dv">2</span>)</span>
-<span id="cb157-5"><a href="#cb157-5" aria-hidden="true" tabindex="-1"></a>MSE</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb162"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> <span class="fu">predict</span>(model_ranking, <span class="at">newdata =</span> val)</span>
+<span id="cb162-2"><a href="#cb162-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Trả lại giá trị ban đầu</span></span>
+<span id="cb162-3"><a href="#cb162-3" aria-hidden="true" tabindex="-1"></a>y_hat <span class="ot">&lt;-</span> y_hat<span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="fl">1.08</span>)</span>
+<span id="cb162-4"><a href="#cb162-4" aria-hidden="true" tabindex="-1"></a>MSE <span class="ot">&lt;-</span> <span class="fu">mean</span>((val<span class="sc">$</span>overall <span class="sc">-</span> y_hat)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb162-5"><a href="#cb162-5" aria-hidden="true" tabindex="-1"></a>MSE</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 9.788576</code></pre>
+<pre><code>[1] 9.845632</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -3227,50 +3261,50 @@ Kết luận với mô hình hồi quy
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb159"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb159-1"><a href="#cb159-1" aria-hidden="true" tabindex="-1"></a>tree_model <span class="ot">&lt;-</span> <span class="fu">decision_tree</span>(<span class="at">min_n=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb159-2"><a href="#cb159-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"rpart"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb159-3"><a href="#cb159-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_mode</span>(.,<span class="st">"regression"</span>)</span>
-<span id="cb159-4"><a href="#cb159-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb159-5"><a href="#cb159-5" aria-hidden="true" tabindex="-1"></a>tree_fit <span class="ot">&lt;-</span></span>
-<span id="cb159-6"><a href="#cb159-6" aria-hidden="true" tabindex="-1"></a>  tree_model <span class="sc">%&gt;%</span></span>
-<span id="cb159-7"><a href="#cb159-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(overall <span class="sc">~</span> ., <span class="at">data=</span>train)</span>
-<span id="cb159-8"><a href="#cb159-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb159-9"><a href="#cb159-9" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> </span>
-<span id="cb159-10"><a href="#cb159-10" aria-hidden="true" tabindex="-1"></a>  val <span class="sc">%&gt;%</span></span>
-<span id="cb159-11"><a href="#cb159-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(overall) <span class="sc">%&gt;%</span></span>
-<span id="cb159-12"><a href="#cb159-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">predict</span>(tree_fit,val))</span>
-<span id="cb159-13"><a href="#cb159-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb159-14"><a href="#cb159-14" aria-hidden="true" tabindex="-1"></a>MSE_tree <span class="ot">&lt;-</span> <span class="fu">mean</span>((result<span class="sc">$</span>overall <span class="sc">-</span> result<span class="sc">$</span>.pred)<span class="sc">^</span><span class="dv">2</span>)</span>
-<span id="cb159-15"><a href="#cb159-15" aria-hidden="true" tabindex="-1"></a>MSE_tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a>tree_model <span class="ot">&lt;-</span> <span class="fu">decision_tree</span>(<span class="at">min_n=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb164-2"><a href="#cb164-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"rpart"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb164-3"><a href="#cb164-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_mode</span>(.,<span class="st">"regression"</span>)</span>
+<span id="cb164-4"><a href="#cb164-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-5"><a href="#cb164-5" aria-hidden="true" tabindex="-1"></a>tree_fit <span class="ot">&lt;-</span></span>
+<span id="cb164-6"><a href="#cb164-6" aria-hidden="true" tabindex="-1"></a>  tree_model <span class="sc">%&gt;%</span></span>
+<span id="cb164-7"><a href="#cb164-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(overall <span class="sc">~</span> ., <span class="at">data=</span>train)</span>
+<span id="cb164-8"><a href="#cb164-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-9"><a href="#cb164-9" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> </span>
+<span id="cb164-10"><a href="#cb164-10" aria-hidden="true" tabindex="-1"></a>  val <span class="sc">%&gt;%</span></span>
+<span id="cb164-11"><a href="#cb164-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(overall) <span class="sc">%&gt;%</span></span>
+<span id="cb164-12"><a href="#cb164-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">predict</span>(tree_fit,val))</span>
+<span id="cb164-13"><a href="#cb164-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-14"><a href="#cb164-14" aria-hidden="true" tabindex="-1"></a>MSE_tree <span class="ot">&lt;-</span> <span class="fu">mean</span>((result<span class="sc">$</span>overall <span class="sc">-</span> result<span class="sc">$</span>.pred)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb164-15"><a href="#cb164-15" aria-hidden="true" tabindex="-1"></a>MSE_tree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 32.94434</code></pre>
+<pre><code>[1] 32.97056</code></pre>
 </div>
 </div>
 <p>XGboost</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb161"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb161-1"><a href="#cb161-1" aria-hidden="true" tabindex="-1"></a>train_control <span class="ot">=</span> <span class="fu">trainControl</span>(<span class="at">method =</span> <span class="st">"cv"</span>, <span class="at">number =</span> <span class="dv">5</span>, <span class="at">search =</span> <span class="st">"grid"</span>)</span>
-<span id="cb161-2"><a href="#cb161-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb161-3"><a href="#cb161-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Tạo thông số để thực hiện Grid search</span></span>
-<span id="cb161-4"><a href="#cb161-4" aria-hidden="true" tabindex="-1"></a>gbmGrid <span class="ot">&lt;-</span>  <span class="fu">expand.grid</span>(<span class="at">max_depth =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>), </span>
-<span id="cb161-5"><a href="#cb161-5" aria-hidden="true" tabindex="-1"></a>                        <span class="at">nrounds =</span> (<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)<span class="sc">*</span><span class="dv">50</span>,    <span class="co"># số lượng cây</span></span>
-<span id="cb161-6"><a href="#cb161-6" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># cài đặt các value mặc định</span></span>
-<span id="cb161-7"><a href="#cb161-7" aria-hidden="true" tabindex="-1"></a>                        <span class="at">eta =</span> <span class="fl">0.3</span>,</span>
-<span id="cb161-8"><a href="#cb161-8" aria-hidden="true" tabindex="-1"></a>                        <span class="at">gamma =</span> <span class="dv">0</span>,</span>
-<span id="cb161-9"><a href="#cb161-9" aria-hidden="true" tabindex="-1"></a>                        <span class="at">subsample =</span> <span class="dv">1</span>,</span>
-<span id="cb161-10"><a href="#cb161-10" aria-hidden="true" tabindex="-1"></a>                        <span class="at">min_child_weight =</span> <span class="dv">1</span>,</span>
-<span id="cb161-11"><a href="#cb161-11" aria-hidden="true" tabindex="-1"></a>                        <span class="at">colsample_bytree =</span> <span class="fl">0.6</span>)</span>
-<span id="cb161-12"><a href="#cb161-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb161-13"><a href="#cb161-13" aria-hidden="true" tabindex="-1"></a><span class="co"># huấn luyện mô hình XGboost Regression tree model</span></span>
-<span id="cb161-14"><a href="#cb161-14" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> (<span class="fu">train</span>(overall<span class="sc">~</span>., </span>
-<span id="cb161-15"><a href="#cb161-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> train, <span class="at">method =</span> <span class="st">"xgbTree"</span>, </span>
-<span id="cb161-16"><a href="#cb161-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">trControl =</span> train_control, </span>
-<span id="cb161-17"><a href="#cb161-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">tuneGrid =</span> gbmGrid, <span class="at">verbosity =</span> <span class="dv">0</span>))</span>
-<span id="cb161-18"><a href="#cb161-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb161-19"><a href="#cb161-19" aria-hidden="true" tabindex="-1"></a><span class="co"># xuất kết quả mô hình tốt nhất cho XGboots</span></span>
-<span id="cb161-20"><a href="#cb161-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a>train_control <span class="ot">=</span> <span class="fu">trainControl</span>(<span class="at">method =</span> <span class="st">"cv"</span>, <span class="at">number =</span> <span class="dv">5</span>, <span class="at">search =</span> <span class="st">"grid"</span>)</span>
+<span id="cb166-2"><a href="#cb166-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb166-3"><a href="#cb166-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Tạo thông số để thực hiện Grid search</span></span>
+<span id="cb166-4"><a href="#cb166-4" aria-hidden="true" tabindex="-1"></a>gbmGrid <span class="ot">&lt;-</span>  <span class="fu">expand.grid</span>(<span class="at">max_depth =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>), </span>
+<span id="cb166-5"><a href="#cb166-5" aria-hidden="true" tabindex="-1"></a>                        <span class="at">nrounds =</span> (<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)<span class="sc">*</span><span class="dv">50</span>,    <span class="co"># số lượng cây</span></span>
+<span id="cb166-6"><a href="#cb166-6" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># cài đặt các value mặc định</span></span>
+<span id="cb166-7"><a href="#cb166-7" aria-hidden="true" tabindex="-1"></a>                        <span class="at">eta =</span> <span class="fl">0.3</span>,</span>
+<span id="cb166-8"><a href="#cb166-8" aria-hidden="true" tabindex="-1"></a>                        <span class="at">gamma =</span> <span class="dv">0</span>,</span>
+<span id="cb166-9"><a href="#cb166-9" aria-hidden="true" tabindex="-1"></a>                        <span class="at">subsample =</span> <span class="dv">1</span>,</span>
+<span id="cb166-10"><a href="#cb166-10" aria-hidden="true" tabindex="-1"></a>                        <span class="at">min_child_weight =</span> <span class="dv">1</span>,</span>
+<span id="cb166-11"><a href="#cb166-11" aria-hidden="true" tabindex="-1"></a>                        <span class="at">colsample_bytree =</span> <span class="fl">0.6</span>)</span>
+<span id="cb166-12"><a href="#cb166-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb166-13"><a href="#cb166-13" aria-hidden="true" tabindex="-1"></a><span class="co"># huấn luyện mô hình XGboost Regression tree model</span></span>
+<span id="cb166-14"><a href="#cb166-14" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> (<span class="fu">train</span>(overall<span class="sc">~</span>., </span>
+<span id="cb166-15"><a href="#cb166-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> train, <span class="at">method =</span> <span class="st">"xgbTree"</span>, </span>
+<span id="cb166-16"><a href="#cb166-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">trControl =</span> train_control, </span>
+<span id="cb166-17"><a href="#cb166-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">tuneGrid =</span> gbmGrid, <span class="at">verbosity =</span> <span class="dv">0</span>))</span>
+<span id="cb166-18"><a href="#cb166-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb166-19"><a href="#cb166-19" aria-hidden="true" tabindex="-1"></a><span class="co"># xuất kết quả mô hình tốt nhất cho XGboots</span></span>
+<span id="cb166-20"><a href="#cb166-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>eXtreme Gradient Boosting 
@@ -3280,40 +3314,40 @@ Kết luận với mô hình hồi quy
 
 No pre-processing
 Resampling: Cross-Validated (5 fold) 
-Summary of sample sizes: 584, 582, 582, 583, 581 
+Summary of sample sizes: 583, 583, 583, 581, 582 
 Resampling results across tuning parameters:
 
   max_depth  nrounds  RMSE      Rsquared   MAE     
-  3           50      2.762838  0.9690180  2.183960
-  3          100      2.788751  0.9683503  2.202137
-  3          150      2.801621  0.9680092  2.196372
-  3          200      2.816418  0.9676235  2.202784
-  3          250      2.830967  0.9673058  2.208084
-  3          300      2.845155  0.9669351  2.221371
-  3          350      2.852541  0.9667410  2.223868
-  3          400      2.857310  0.9666252  2.228713
-  3          450      2.861794  0.9664977  2.233753
-  3          500      2.864747  0.9664219  2.236510
-  5           50      2.827630  0.9676029  2.177772
-  5          100      2.833594  0.9675080  2.165450
-  5          150      2.840813  0.9673260  2.171368
-  5          200      2.841330  0.9673085  2.169310
-  5          250      2.841206  0.9673083  2.168583
-  5          300      2.841656  0.9672959  2.169101
-  5          350      2.841889  0.9672888  2.169331
-  5          400      2.841910  0.9672878  2.169408
-  5          450      2.841875  0.9672885  2.169405
-  5          500      2.841875  0.9672885  2.169405
-  7           50      2.909023  0.9657312  2.221195
-  7          100      2.910594  0.9656935  2.219221
-  7          150      2.910052  0.9657052  2.219263
-  7          200      2.910104  0.9657032  2.219387
-  7          250      2.910108  0.9657031  2.219397
-  7          300      2.910108  0.9657031  2.219397
-  7          350      2.910108  0.9657031  2.219397
-  7          400      2.910108  0.9657031  2.219397
-  7          450      2.910108  0.9657031  2.219397
-  7          500      2.910108  0.9657031  2.219397
+  3           50      2.738456  0.9698453  2.117606
+  3          100      2.752520  0.9695037  2.124214
+  3          150      2.778020  0.9688827  2.128933
+  3          200      2.787270  0.9686481  2.131499
+  3          250      2.802305  0.9682809  2.137736
+  3          300      2.811251  0.9680998  2.145412
+  3          350      2.817049  0.9679858  2.149816
+  3          400      2.817537  0.9679579  2.150542
+  3          450      2.821570  0.9678572  2.152970
+  3          500      2.822659  0.9678427  2.154213
+  5           50      2.749217  0.9698651  2.122045
+  5          100      2.746753  0.9698425  2.105192
+  5          150      2.748721  0.9697913  2.106424
+  5          200      2.747533  0.9698254  2.104417
+  5          250      2.746379  0.9698543  2.103935
+  5          300      2.746433  0.9698542  2.104272
+  5          350      2.746455  0.9698548  2.104319
+  5          400      2.746378  0.9698566  2.104261
+  5          450      2.746375  0.9698567  2.104262
+  5          500      2.746375  0.9698567  2.104262
+  7           50      2.895089  0.9655850  2.238090
+  7          100      2.895867  0.9655462  2.235670
+  7          150      2.895615  0.9655528  2.235130
+  7          200      2.895622  0.9655519  2.235077
+  7          250      2.895620  0.9655519  2.235071
+  7          300      2.895620  0.9655519  2.235071
+  7          350      2.895620  0.9655519  2.235071
+  7          400      2.895620  0.9655519  2.235071
+  7          450      2.895620  0.9655519  2.235071
+  7          500      2.895620  0.9655519  2.235071
 
 Tuning parameter 'eta' was held constant at a value of 0.3
 Tuning
@@ -3328,18 +3362,18 @@ The final values used for the model were nrounds = 50, max_depth = 3, eta
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb163"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb163-1"><a href="#cb163-1" aria-hidden="true" tabindex="-1"></a>pred_y <span class="ot">=</span> <span class="fu">predict</span>(model, val)</span>
-<span id="cb163-2"><a href="#cb163-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb163-3"><a href="#cb163-3" aria-hidden="true" tabindex="-1"></a><span class="co"># performance metrics on the test data</span></span>
-<span id="cb163-4"><a href="#cb163-4" aria-hidden="true" tabindex="-1"></a>test_y <span class="ot">=</span> val<span class="sc">$</span>overall</span>
-<span id="cb163-5"><a href="#cb163-5" aria-hidden="true" tabindex="-1"></a>MSE_xgboots <span class="ot">&lt;-</span> <span class="fu">mean</span>((test_y <span class="sc">-</span> pred_y)<span class="sc">^</span><span class="dv">2</span>)</span>
-<span id="cb163-6"><a href="#cb163-6" aria-hidden="true" tabindex="-1"></a>MSE_xgboots</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb168"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a>pred_y <span class="ot">=</span> <span class="fu">predict</span>(model, val)</span>
+<span id="cb168-2"><a href="#cb168-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb168-3"><a href="#cb168-3" aria-hidden="true" tabindex="-1"></a><span class="co"># performance metrics on the test data</span></span>
+<span id="cb168-4"><a href="#cb168-4" aria-hidden="true" tabindex="-1"></a>test_y <span class="ot">=</span> val<span class="sc">$</span>overall</span>
+<span id="cb168-5"><a href="#cb168-5" aria-hidden="true" tabindex="-1"></a>MSE_xgboots <span class="ot">&lt;-</span> <span class="fu">mean</span>((test_y <span class="sc">-</span> pred_y)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb168-6"><a href="#cb168-6" aria-hidden="true" tabindex="-1"></a>MSE_xgboots</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 9.55082</code></pre>
+<pre><code>[1] 9.345697</code></pre>
 </div>
 </div>
-<p>Như vậy trong tập dữ liệu này thì mô hình XGboost đã cho kết quả tốt hơn một chút (9.5508199 so với 9.788576)</p>
+<p>Như vậy trong tập dữ liệu này thì mô hình XGboost đã cho kết quả tốt hơn một chút (9.3456975 so với 9.8456322)</p>
 </section>
 <section id="kết-luận-4" class="level3">
 <h3 class="anchored" data-anchor-id="kết-luận-4">Kết luận</h3>
@@ -3355,8 +3389,8 @@ Kết luận với bài toán dự đoán điểm xếp hạng đại học
 <div class="callout-body-container callout-body">
 <p>Theo cá nhân, đây là một bài toán khá thú vị và đa dạng cách để xử lí.<br>
 Trước tiên, dữ liệu khuyết ở tập dữ liệu này được để khuyết một cách có chủ đích (bị bỏ đi tên quốc gia ở đây cụ thể là Nga). Tuy nhiên nhìn chung dữ liệu vẫn đảm bảo được tính khách quan, các giá trị outlier ở tập dữ liệu cũng đóng vai trò quan trọng khiến chúng không thể bị loại bỏ (vì các outlier này là các chỉ số thuộc các trường đại học/viện nghiên cứu hàng đầu nổi bật trong giảng dạy và nghiên cứu).<br>
-Biến phụ thuộc mà ta chọn cũng khá đặc biệt khi một phần là điểm số cụ thể và một phần là các khoảng điểm để xếp hạng ranking gây khó khăn để tìm ra được cách xử lí.<br>
-Một khó khăn khác với mô hình này đó là khác với task 1 (hoạt động 1) khi tính ổn định phương sai không thỏa mãn và có xuất hiện đa cộng tuyến.</p>
+Biến phụ thuộc được chọn cũng khá đặc biệt khi một phần là điểm số cụ thể và một phần là các khoảng điểm để xếp hạng ranking gây khó khăn để tìm ra được cách xử lí.<br>
+Một khó khăn khác với mô hình này đó là khác với bài tập 1 (hoạt động 1) khi tính ổn định phương sai không thỏa mãn và có xuất hiện đa cộng tuyến.</p>
 </div>
 </div>
 </section>
